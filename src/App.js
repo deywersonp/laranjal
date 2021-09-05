@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Scope } from "@unform/core";
+import { Form } from "@unform/web";
+import Input from "./components/Input";
+import "./styles.css";
 
-function App() {
+export default function App() {
+  function handleSubmit(data, { reset }) {
+    console.log(data);
+
+    reset();
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Form onSubmit={handleSubmit}>
+
+        <img
+        src="./orange.svg"
+        height="140"
+        width="auto"
+        alt="logo-orange"
+      />
+      <h1>Laranjal</h1>
+      <p> Sistema de Agendamento de Consultores </p>
+
+      <Input name="email" type="email" placeholder="email@fcamara.com.br" />
+      <Input name="password" type ="password" placeholder ="Senha"/>
+       <button type="submit">Login</button>
+      
+      </Form>
+     
+
   );
 }
-
-export default App;
