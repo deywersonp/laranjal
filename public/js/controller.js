@@ -30,7 +30,5 @@ inputData.addEventListener('change', function () {
   }
 });
 
-mesa = document.querySelector('.col-md-3.col-sm-6')
-console.log(mesa)
 mesaSelecionada.value = 'mesa14'
 
