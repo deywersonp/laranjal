@@ -1,5 +1,3 @@
-
-
 let inputData = document.querySelector('#inputData');
 let dataSelecionada = document.querySelector('#dataSelecionada')
 let mesaSelecionada = document.querySelector('#mesaSelecionada')
@@ -8,6 +6,7 @@ let data = new Date();
 let dataAtual = data.toISOString().split('T')[0];
 
 inputData.value = dataAtual;
+dataSelecionada.value = dataAtual;
 inputData.min = dataAtual;
 
 inputData.addEventListener('change', function () {
@@ -31,5 +30,7 @@ inputData.addEventListener('change', function () {
   }
 });
 
+mesa = document.querySelector('.col-md-3.col-sm-6')
+console.log(mesa)
 mesaSelecionada.value = 'mesa14'
 
