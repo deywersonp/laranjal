@@ -1,7 +1,12 @@
 let inputData = document.querySelector('#inputData');
 let dataSelecionada = document.querySelector('#dataSelecionada')
+
+let unidade = document.querySelector('#unidades')
+let unidadeSelecionada = document.querySelector('#unidadeSelecionada')
+
 let mesaSelecionada = document.querySelector('#mesaSelecionada')
 
+// Interação entre os inputs de data
 let data = new Date();
 let dataAtual = data.toISOString().split('T')[0];
 
@@ -30,13 +35,16 @@ inputData.addEventListener('change', function () {
   }
 });
 
+
+// Interação entre os inputs de Unidade
+unidadeSelecionada.value = unidade.options[unidade.selectedIndex].text;
+
+unidade.addEventListener('change', () => {
+  unidadeSelecionada.value = unidade.options[unidade.selectedIndex].text;
+})
+
+
+
+// Interação entre os inputs de Local
 mesaSelecionada.value = 'mesa14'
 
-let unidadeSelecionada = document.querySelector('#unidades')
-let text = unidadeSelecionada.options[unidadeSelecionada.selectedIndex].text;
-console.log(text);
-
-unidadeSelecionada.addEventListener('change', () => {
-  let text = unidadeSelecionada.options[unidadeSelecionada.selectedIndex].text;
-  console.log(text);
-})
