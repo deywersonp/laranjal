@@ -32,3 +32,11 @@ inputData.addEventListener('change', function () {
 
 mesaSelecionada.value = 'mesa14'
 
+let unidadeSelecionada = document.querySelector('#unidades')
+let text = unidadeSelecionada.options[unidadeSelecionada.selectedIndex].text;
+console.log(text);
+
+unidadeSelecionada.addEventListener('change', () => {
+  let text = unidadeSelecionada.options[unidadeSelecionada.selectedIndex].text;
+  console.log(text);
+})
