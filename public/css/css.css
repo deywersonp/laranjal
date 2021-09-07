@@ -1,0 +1,124 @@
+body {
+  padding-top: 105px;
+  background-color: #eeeeee;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #2a2962 !important;
+  border-color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  font-weight: bold;
+}
+
+.logo-laranjal {
+  margin-right: 30px;
+}
+
+.bg {
+  background-color: #2a2962;
+  z-index: 999;
+  padding: 20px;
+}
+
+.nav li {
+  margin-right: 10px;
+}
+
+.nav button i {
+  margin-left: 10px;
+}
+
+.nav-top {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.principal {
+  padding: 60px 0;
+  margin-bottom: 350px;
+}
+
+.box {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-left: 2px solid #591df1;
+  box-shadow: 0px 15px 10px -15px rgba(82, 63, 105, 0.1);
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0px 5px 5px 0px rgba(82, 63, 105, 0.2);
+}
+
+.sombra {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 10px -15px rgba(82, 63, 105, 0.1);
+  margin-top: 85px;
+  z-index: 2;
+}
+
+h3.text-center {
+  margin-bottom: 25px !important;
+}
+
+.footer-pad {
+  padding: 20px;
+  justify-content: center;
+}
+
+p.copy {
+  margin-bottom: 0 !important;
+}
+
+.list-group-item.active {
+  background-color: #591df1;
+  border-color: #591df1;
+}
+
+.btn-outline-primary {
+  color: #591df1;
+  border-color: #591df1;
+}
+
+.bread {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-direita {
+  background-color: #2a2962;
+  color: white;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #591df1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  cursor: pointer;
+}
