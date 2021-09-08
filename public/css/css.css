@@ -122,3 +122,8 @@ p {
 .navbar-dark .navbar-nav .nav-link {
   cursor: pointer;
 }
+
+.minhaClasseGrid{
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+}

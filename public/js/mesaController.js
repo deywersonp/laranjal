@@ -1,6 +1,6 @@
-let mesas = document.querySelectorAll('.col-md-3.col-sm-6.mesa')
+let mesas = document.querySelectorAll('.posicao-mesa.box')
 let inputMesaSelecionada = document.querySelector('#mesaSelecionada')
-
+console.log(mesas)
 document.addEventListener('DOMContentLoaded', () => {
   mesas.forEach((mesa) => {
     mesa.addEventListener('click', getId);
