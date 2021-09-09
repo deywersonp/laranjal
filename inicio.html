@@ -15,7 +15,7 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg">
-            <a class="logo-laranjal" href="#"><img src="./public/img/logo-laranjal.png" width="150px" height="auto"
+            <a class="logo-laranjal" href="#"><img src="./public/img/logo-laranjal.svg" width="150px" height="auto"
                     alt="Logo Laranjal"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,166 +29,106 @@
                 </ul>
             </div>
         </nav>
-        <div class="navbar fixed-top sombra container-fluid">
-            <ul class="nav">
-                <li class="nav-item">Você está em:</li>
-                <li><i class="fas fa-home"></i> Painel de Agendamentos</li>
-            </ul>
-            <ul class="nav  justify-content-end">
-                <li class="nav-item dropdown">
-                <li class="nav-item">Usuário: </li>
-                <li class="nav-item"><strong>Cristiano</strong></li>
-                </li>
-                <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
-            </ul>
-        </div>
     </header>
     <!-- CONTEÚDO PRINCIPAL -->
     <section class="principal bg-color-cinza">
-        <h3 class="text-center">Painel :: Seleção de Lugar </h3>
-        <div class="d-flex justify-content-center">
-
-            <select name="unidades" id="unidades" class="mr-3" style="height: 30px !important;">
-                <option value="sp-1-1andar">São Paulo (1º Andar)</option>
-                <option value="sp-1-2andar">São Paulo (2º Andar)</option>
-                <option value="santos-1">Santos</option>
+        <div class="row seletor">
+            <div class ="col-md-4 sm-4">
+            <select name="unidades" id="unidades" class="mr-3 unidade">
+                <option class="unidade" value="sp-1-1andar">São Paulo (1º Andar)</option>
+                <option class="unidade" value="sp-1-2andar">São Paulo (2º Andar)</option>
+                <option class="unidade" value="santos-1">Santos</option>
             </select>
-
+            </div>
+            <div class ="col-md-4 sm- 4">
             <label class="sr-only" for="inputData">
                 Selecione a data
             </label>
-            <input id="inputData" style="width: 140px !important;" type="date" class="mb-3">
+            <input id="inputData"  type="date" class="mb-3 data unidade">
+            </div>
+            <div class ="col-md-4 sm-4">
+                
+            <button type="button" class="agenda" > Reserva rápida</button> 
+                
+            </div>
+                
         </div>
-        <div class="container-fluid">
-            <div class="row" id="modalFather">
+        <div class="conteudo ">
+            <div class="row">
                 <div class="col">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <div class="col-md-12 col-sm-12">
+                            <div class="mesa">
+                                <span class="botao">A</span> 
+                                <button type="button" class ="lugar" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">
-                                    20 lugares
+                                    24 lugares
                                 </button>
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    </div> 
+                     <div class="row">
+                        <div class="col-md-10 col-sm-6">
+                            <div class="mesa">
+                                <span class="botao">B</span> 
+                                <button type="button" class ="lugar" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">
-                                    20 lugares
+                                    24 lugares
                                 </button>
 
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    20 lugares
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    20 lugares
-                                </button>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="banheiro">
+                                 <img src="./public/img/banheiro.svg" width ="45" heigth = "45">
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <div class="col-md-2 col-sm-6">
+                            <div class="mesa">
+                                 SALA 1
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="mesa">
+                                <span class="botao">D</span> 
+                                <button type="button" class ="lugar" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">
-                                    20 lugares
+                                    24 lugares
                                 </button>
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <div class="col-md-4 col-sm-6">
+                            <div class="mesa">
+                                <span class="botao">E</span> 
+                                <button type="button" class ="lugar" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">
-                                    20 lugares
-                                </button>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    20 lugares
+                                    24 lugares
                                 </button>
                             </div>
                         </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    20 lugares
-                                </button>
+                         <div class="col-md-2 col-sm-6">
+                            <div class="cozinha">
+                                 <img src="./public/img/cozinha.svg" width ="45" heigth = "45">
                             </div>
                         </div>
-                    </div>
-
+                    </div> 
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    20 lugares
-                                </button>
-
+                            <div class="col-md-2 col-sm-6">
+                                <div class="mesa">
+                                     SALA 2
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    20 lugares
-                                </button>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    20 lugares
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    20 lugares
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    </div>  
 
                 </div>
 
                 <!-- Modal -->
-                <!-- <script src="./public/js/criandoModal.js"></script> -->
-
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal " id="staticBackdrop">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
