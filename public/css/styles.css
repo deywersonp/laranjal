@@ -27,6 +27,8 @@ header{
 
 .header .profile-info p {
   margin-right: 1.5rem;
+
+  font-weight: 500;
   color: var(--grey-light);
 }
 
@@ -44,7 +46,7 @@ header{
 
 /********** STORIES **********/
 
-main .stories {
+.second-container .stories {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -55,15 +57,17 @@ main .stories {
   background-color: var(--white);
 }
 
-main .stories .circle {
+.second-container .stories .circle {
   width: 5.7rem;
   height: 5.7rem;
+
   border-radius: 50%;
+  border: .2rem solid var(--orange);
 
   background-color: var(--green);
 }
 
-main .stories .first-story .your-stories {
+.second-container .stories .first-story .your-stories {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,29 +80,31 @@ main .stories .first-story .your-stories {
   background-color: var(--grey);
 }
 
-main .stories .first-story .your-stories img {
+.second-container .stories .first-story .your-stories img {
   width: 2.8rem;
 }
 
-main .stories .first-story p{
+.second-container .stories .first-story p{
  text-align: center;
  margin-left: -1rem;
+ font-weight: 500;
 }
 
-main .stories .first-story .your-stories,
-main .stories .circle {
+.second-container .stories .first-story .your-stories,
+.second-container .stories .circle {
   margin-right: 1.5rem;
 }
 
-main .stories :last-child {
+.second-container .stories :last-child {
   margin-right: 0;
 }
 
-main p {
+.second-container p {
   margin-top: .5rem;
+  font-weight: 500;
 }
 /********** INPUTS DE SELEÇÃO (INPUT SELECTOR) **********/
-main .input-selector {
+.second-container .input-selector {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,8 +117,53 @@ main .input-selector {
   background-color: var(--white);
 }
 
+.second-container .input-selector select{
+  margin-left: 1rem;
+}
+
+.second-container .input-selector select,
+.second-container .input-selector input {
+  width: 12rem;
+  height: 3.5rem;
+
+  line-height: 1.5rem;
+  
+  font-weight: 500;
+  color: var(--grey);
+
+  background-color: var(--grey-light);
+
+  border: 1px solid var(--grey);
+}
 
 
-/********** ESCOLHA O LUGAR (SELECT PLACE) **********/
-/********** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) **********/
+.second-container .input-selector button {
+  width: 7rem;
+  height: 3.5rem;
+
+  line-height: 1.4rem;
+
+  color: var(--white);
+  
+  background-color: var(--orange);
+
+  border: 1px solid var(--orange);
+}
+
+.second-container .input-selector select,
+.second-container .input-selector input,
+.second-container .input-selector button {
+  margin-right: 1rem;
+  
+  font-size: 1.1rem;
+
+  border-radius: .5rem;
+}
+
+/********** CONTEÚDO PRINCIPAL **********/
+/**** ESCOLHA O LUGAR (SELECT PLACE) ****/
+
+
+
 /********** FOOTER **********/
+/**** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) ****/
