@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  --orange: #FE4400;
+  --blue-black: #002A33;
+  --grey: #606060;
+  --white: #F3F3F3;
+  --red: #CC1040;
+  --green: #00BD00;
+  --blue: #1788F4;
+
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: var(--background);
+}
+
+body,
+button,
+input,
+textarea {
+  font-size: clamp(14px, 1.6rem, 2vw);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
