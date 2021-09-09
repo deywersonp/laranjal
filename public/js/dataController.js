@@ -1,4 +1,4 @@
-let inputData = document.querySelector('#inputData');
+let inputData = document.querySelector('#input-data');
 let dataSelecionada = document.querySelector('#dataSelecionada')
 
 // Interação entre os inputs de data

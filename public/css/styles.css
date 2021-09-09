@@ -19,13 +19,19 @@ header{
   margin-left: 1rem;
 }
 
-.header p {
-  margin-left: 8rem;
-  color: #FFFFFF;
+.header .profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .profile-info p {
+  margin-right: 1.5rem;
+  color: var(--grey-light);
 }
 
 
-.header .circle{
+.header .profile-info .circle{
   width: 3rem;
   height: 3rem;
 
@@ -46,7 +52,7 @@ main .stories {
   width: 100vw;
   height: 9.7rem;
 
-  background-color: #EBEAED;
+  background-color: var(--white);
 }
 
 main .stories .circle {
@@ -57,7 +63,7 @@ main .stories .circle {
   background-color: var(--green);
 }
 
-main .stories .your-stories {
+main .stories .first-story .your-stories {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,15 +76,43 @@ main .stories .your-stories {
   background-color: var(--grey);
 }
 
-main .stories .your-stories img {
+main .stories .first-story .your-stories img {
   width: 2.8rem;
 }
 
-main .stories .your-stories,
+main .stories .first-story p{
+ text-align: center;
+ margin-left: -1rem;
+}
+
+main .stories .first-story .your-stories,
 main .stories .circle {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 main .stories :last-child {
   margin-right: 0;
 }
+
+main p {
+  margin-top: .5rem;
+}
+/********** INPUTS DE SELEÇÃO (INPUT SELECTOR) **********/
+main .input-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100vw;
+  height: 5rem;
+
+  margin-top: .2rem;
+
+  background-color: var(--white);
+}
+
+
+
+/********** ESCOLHA O LUGAR (SELECT PLACE) **********/
+/********** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) **********/
+/********** FOOTER **********/

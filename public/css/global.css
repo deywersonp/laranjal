@@ -10,7 +10,8 @@ html {
   --orange: #FE4400;
   --blue-black: #002A33;
   --grey: #606060;
-  --white: #F3F3F3;
+  --grey-light: #F3F3F3;
+  --white: #FFFFFF;
   --red: #CC1040;
   --green: #00BD00;
   --blue: #1788F4;
@@ -25,13 +26,14 @@ body,
   flex-direction: column;
   
   height: 100vh;
-  background: var(--white);
+  background: var(--grey-light);
 }
 
 body,
 button,
 input,
 textarea,
+select,
 .container {
   font-family: 'Montserrat', sans-serif;
 }

@@ -18,25 +18,71 @@
     <header>
       <div class="header">
         <img src="./public/images/laranjal-white.svg" alt="Laranjal - Logo">
-        <p>Yasmin Silva</p>
-        <div class="circle"></div>
+        <div class="profile-info">
+          <p>Yasmin Silva</p>
+          <div class="circle"></div>
+        </div>
       </div>
     </header>
 
     <main>
       <div class="stories">
-        <div class="your-stories">
-          <img src="./public/images/plus.svg" alt="Adicionar stories">
+
+        <div class="first-story">
+          <div class="your-stories">
+            <img src="./public/images/plus.svg" alt="Adicionar stories">
+          </div>
+          <p>Seu Story</p>
         </div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+
+        <div>
+          <div class="circle"></div>
+          <p>Maria Silva</p>
+        </div>
+
+        <div>
+          <div class="circle"></div>
+          <p>Felipe Ribei...</p>
+        </div>
+
+        <div>
+          <div class="circle"></div>
+          <p>Beatriz Frei...</p>
+        </div>
+
+      </div>
+
+      <div class="input-selector">
+        <select name="unidades" id="unidades">
+          <option class="unidade" value="sp-1-1andar">São Paulo (1º)</option>
+          <option class="unidade" value="sp-1-2andar">São Paulo (2º)</option>
+          <option class="unidade" value="santos-1">Santos</option>
+        </select>
+
+        <label class="sr-only" for="input-data">
+          Selecione a data
+        </label>
+        <input id="input-data" type="date">
+
+        <button>Reserva Rápida</button>
+      </div>
+
+      <div class="select-place">
       </div>
     </main>
 
     <footer>
+      <div class="capacity-status">
+      </div>
+
+      <div class="nav-bar">
+      </div>
     </footer>
   </div>
+
+  <script src="./public/js/dataController.js"></script>
+  <script src="./public/js/unidadeController.js"></script>
+  <script src="./public/js/mesaController.js"></script>
 </body>
 
 </html>
