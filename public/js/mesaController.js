@@ -1,4 +1,4 @@
-let mesas = document.querySelectorAll('.posicao-mesa.box')
+let mesas = document.querySelectorAll('.posicao-mesa.box.disponivel')
 let inputMesaSelecionada = document.querySelector('#mesaSelecionada')
 console.log(mesas)
 document.addEventListener('DOMContentLoaded', () => {
