@@ -1,3 +1,4 @@
+/********** HEADER **********/
 header{
   width: 100vw;
 }
@@ -32,4 +33,52 @@ header{
 
   border-radius: 50%;
   background-color: var(--green);
+}
+
+
+/********** STORIES **********/
+
+main .stories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100vw;
+  height: 9.7rem;
+
+  background-color: #EBEAED;
+}
+
+main .stories .circle {
+  width: 5.7rem;
+  height: 5.7rem;
+  border-radius: 50%;
+
+  background-color: var(--green);
+}
+
+main .stories .your-stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 1rem;
+
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  background-color: var(--grey);
+}
+
+main .stories .your-stories img {
+  width: 2.8rem;
+}
+
+main .stories .your-stories,
+main .stories .circle {
+  margin-right: 1rem;
+}
+
+main .stories :last-child {
+  margin-right: 0;
 }
