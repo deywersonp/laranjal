@@ -19,17 +19,18 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
+body, 
+.container {
   display: flex;
   height: 100vh;
-  background: var(--background);
+  background: var(--white);
 }
 
 body,
 button,
 input,
-textarea {
-  font-size: clamp(14px, 1.6rem, 2vw);
+textarea,
+.container {
   font-family: 'Montserrat', sans-serif;
 }
 
