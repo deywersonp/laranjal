@@ -1,0 +1,233 @@
+.modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+
+  background-color: rgba(73, 74, 77, 0.8);
+
+  /* Atribuir visibility hidden e opacity 0 quando terminar */
+  visibility: visible;
+  opacity: 1;
+
+  z-index: 1;
+}
+
+.modal-wrapper .modal {
+  width: 95%;
+  height: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 7rem;
+  
+  background-color: var(--white);
+
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/********** MODAL - HEADER **********/
+
+.modal-wrapper .modal-header {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal-wrapper .modal-header .back {
+  background-color: var(--white);
+}
+
+.modal-wrapper .modal-header .back img{
+  width: 2.2rem;
+  margin-left: 1rem;
+
+  transform: translateY(5%);
+}
+
+.modal-wrapper .modal-header span{
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--grey);
+
+  margin-top: .2rem;
+  margin-left: 2rem;
+}
+
+.modal-wrapper .modal .separator {
+  width: 95%;
+
+  margin-top: 1.7rem;
+
+  border: .12rem solid var(--grey);
+
+  border-radius: 2rem;
+  background-color: var(--grey);
+}
+
+/********** MODAL - CONTEÚDO PRINCIPAL **********/
+
+.modal-wrapper .modal .table-content {
+  margin-top: 1rem;
+}
+
+.modal-wrapper .modal .place02 {
+  margin-top: 2rem;
+}
+
+.modal-wrapper .modal .table-available,
+.modal-wrapper .modal .table-unavailable,
+.modal-wrapper .modal .table-filled {
+  padding: .2rem;
+}
+
+.modal-wrapper .modal .table-filled {
+  width: 2.2rem;
+}
+
+.modal-wrapper .modal .table-separator {
+  width: 100%;
+  height: 2rem;
+
+  border: .2rem solid var(--grey); 
+  border-radius: .5rem;
+}
+
+/********** MODAL - FOOTER **********/
+
+.modal-wrapper .modal .modal-footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 75% 25%;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules {
+  position: relative;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules,
+.modal-wrapper .modal .modal-footer .my-schedules .container-table-selected,
+.modal-wrapper .modal .modal-footer .my-schedules .table-selected,
+.modal-wrapper .modal .modal-footer .table-subtitle,
+.modal-wrapper .modal .modal-footer .table-subtitle div{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules .container-table-selected {
+  width: 18rem;
+  height: 6rem;
+
+  border: .1rem solid var(--blue);
+  border-radius: .5rem;
+
+  margin-top: .5rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules .blue-rectangle {
+  width: 100.5%;
+  height: 1.6rem;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  background-color: var(--blue);
+  border-radius: .5rem .5rem 0 0;
+
+  margin-top: -.5rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules .blue-rectangle img {
+  margin-right: .5rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules .table-selected {
+  flex-direction: row;
+  justify-content: flex-start;
+
+  padding-left: 1.2rem;
+  padding-top: 1.2rem;
+
+  width: 100%;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules #mesa-selecionada {
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 8rem;
+}
+
+
+.modal-wrapper .modal .modal-footer .my-schedules #data-selecionada,
+.modal-wrapper .modal .modal-footer .my-schedules #unidade-selecionada {
+  color: var(--blue);
+  font-size: 1rem;
+  width: 7rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules #data-selecionada {
+  margin-left: -1.2rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules .divider {
+  margin-left: -1.5rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules #unidade-selecionada {
+  margin-left: -1.2rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules button.continue {
+  width: 12rem;
+ 
+  margin-top: 1rem;
+
+  background-color: var(--orange);
+  color: var(--white);
+
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules .container-table-selected, 
+.modal-wrapper .modal .modal-footer .my-schedules span,
+.modal-wrapper .modal .modal-footer .my-schedules button.continue {
+  margin-right: 2rem;
+}
+
+.modal-wrapper .modal .modal-footer .my-schedules .table-selected img,
+.modal-wrapper .modal .modal-footer .table-subtitle div .star1 {
+  width: 1.2rem;
+}
+
+.modal-wrapper .modal .modal-footer .table-subtitle {
+  margin-top: 1.2rem;
+}
+
+.modal-wrapper .modal .modal-footer .table-subtitle .orange1{
+  width: 2.1rem;
+}

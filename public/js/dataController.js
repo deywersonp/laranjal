@@ -1,5 +1,5 @@
 let inputData = document.querySelector('#input-data');
-let dataSelecionada = document.querySelector('#dataSelecionada')
+let dataSelecionada = document.querySelector('#data-selecionada')
 
 // Interação entre os inputs de data
 let data = new Date();

@@ -1,6 +1,8 @@
 /********** HEADER **********/
 header{
   width: 100vw;
+
+  z-index: 2;
 }
 
 .header{
@@ -437,6 +439,8 @@ footer .nav-bar {
   height: 4rem;
 
   background-color: var(--orange);
+
+  z-index: 2;
 }
 
 footer .nav-bar div {

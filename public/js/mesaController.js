@@ -1,5 +1,8 @@
 let mesas = document.querySelectorAll('.posicao-mesa.box.disponivel')
-let inputMesaSelecionada = document.querySelector('#mesaSelecionada')
+let inputMesaSelecionada = document.querySelector('#mesa-selecionada')
+
+inputMesaSelecionada.value = 'Mesa-A20';
+
 console.log(mesas)
 document.addEventListener('DOMContentLoaded', () => {
   mesas.forEach((mesa) => {

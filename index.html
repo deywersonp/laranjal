@@ -5,11 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="./public/css/global.css">
-  <link rel="stylesheet" href="./public/css/styles.css">
+  <link rel="stylesheet" href="./public/css/initial.css">
+  <link rel="stylesheet" href="./public/css/modal.css">
+
   <title>Sistema de Agendamentos :: Laranjal</title>
 </head>
 
@@ -193,6 +199,124 @@
     </footer>
   </div>
 
+  <!------- MODAL ------->
+  <div class="modal-wrapper">
+    <div class="modal">
+      <div class="modal-header">
+        <button class="back">
+          <img src="./public/images/back-arrow.svg" alt="Voltar">
+        </button>
+        <span>Selecione a mesa de trabalho</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="main-content">
+        <div class="table-content place01">
+          <img class="table-filled" src="./public/images/orange.svg" alt="Ocupado">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-filled" src="./public/images/orange.svg" alt="Ocupado">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+        </div>
+        <div class="table-separator"></div>
+        <div>
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-filled" src="./public/images/orange.svg" alt="Ocupado">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-filled" src="./public/images/orange.svg" alt="Ocupado">
+        </div>
+
+        <div class="table-content place02">
+          <img class="table-filled" src="./public/images/orange.svg" alt="Ocupado">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-filled" src="./public/images/orange.svg" alt="Ocupado">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+        </div>
+        <div class="table-separator"></div>
+        <div>
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-filled" src="./public/images/orange.svg" alt="Ocupado">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-available" src="./public/images/green-circle.svg" alt="Disponível">
+          <img class="table-unavailable" src="./public/images/cancel.svg" alt="Bloqueado">
+          <img class="table-filled" src="./public/images/orange.svg" alt="Ocupado">
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="my-schedules">
+          <span>Meu agendamento</span>
+
+          <div class="container-table-selected">
+            <div class="blue-rectangle">
+              <img src="./public/images/x-button.svg" alt="close">
+            </div>
+            <div class="table-selected">
+              <img src="./public/images/star.svg" alt="Star">
+              <input id="mesa-selecionada" type="text" readonly></input>
+            </div>
+            <div>
+              <input id="data-selecionada" type="text" readonly></input>
+              <span class="divider">-</span>
+              <input id="unidade-selecionada" type="text" readonly></input>
+            </div>
+          </div>
+
+          <button class="continue">Continuar</button>
+        </div>
+
+        <div class="table-subtitle">
+          <span>Legenda</span>
+          <div>
+            <img class="orange1" src="./public/images/orange.svg" alt="ocupada">
+            <span>ocupada</span>
+
+            <img src="./public/images/green-circle.svg" alt="ocupada">
+            <span>disponível</span>
+
+            <img src="./public/images/cancel.svg" alt="ocupada">
+            <span>indisponível</span>
+
+            <img class="star1" src="./public/images/star.svg" alt="ocupada">
+            <span>você</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- SCRIPTS -->
   <script src="./public/js/dataController.js"></script>
   <script src="./public/js/unidadeController.js"></script>
   <script src="./public/js/mesaController.js"></script>
