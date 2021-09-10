@@ -23,6 +23,7 @@
 
 .modal-wrapper .modal {
   width: 95%;
+  max-width: 32rem;
   height: 42rem;
 
   display: flex;
@@ -68,7 +69,7 @@
 }
 
 .modal-wrapper .modal .separator {
-  width: 95%;
+  width: 92%;
 
   margin-top: 1.7rem;
 
