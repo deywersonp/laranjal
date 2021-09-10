@@ -171,22 +171,16 @@ main{
 }
 
 main .select-place{
-  display: flex;
-  flex-direction: column;
-
-  overflow-y: auto;
-  /* display: grid;
+  display: grid;
   grid-template-areas: 
   'a1 a1 a1 a1 a1 a1'
-  'a2 a2 a2 a2 a2 a2'
-  'a2 a2 a2 a2 a2 a2'
-  'a3 a3 a3 a3 a3 a3'
-  'a4 a4 a4 a4 a4 a4'
-  'a5 a5 a5 a5 a5 a5'
-  'a6 a6 a6 a6 a6 a6'
-  'a7 a7 a7 a7 a7 a7'
-  'a8 a8 a8 a8 a8 a8'
-  'a9 a9 a9 a9 a9 a9'; */
+  'a2 a2 a2 a2 a2 a10'
+  'a11 a3 a3 a3 a3 a10'
+  'a11 a3 a3 a3 a3 a12'
+  'a11 a5 a5 a5 a5 a12'
+  'a14 a5 a5 a5 a5 a15'
+  'a14 a7 a7 a7 a7 a16'
+  'a14 a7 a7 a7 a7 a16';
 
   width: 95%;
   height: 28rem;
@@ -237,18 +231,10 @@ main .select-place .places-available div span {
   color: var(--white);
 }
 
-
-
 main .select-place .first-button {
-  width: 95%;
-}
-
-main .select-place .first-button div{
-  margin-right: 11.2rem;
-}
-
-main .select-place .first-button {
+  margin-top: 1rem;
   width: 28.8rem;
+  grid-area: a1;
 }
 
 main .select-place .first-button div{
@@ -257,6 +243,7 @@ main .select-place .first-button div{
 
 main .select-place .second-button {
   width: 22rem;
+  grid-area: a2;
 }
 
 main .select-place .second-button div{
@@ -269,6 +256,18 @@ main .select-place .third-button {
 
 main .select-place .third-button div{
   margin-right: 4.5rem;
+}
+
+main .select-place .tb1 {
+  grid-area: a3; 
+}
+
+main .select-place .tb2 {
+  grid-area: a5; 
+}
+
+main .select-place .tb3 {
+  grid-area: a7; 
 }
 /**** QUANDO NÃO TEM MESA DISPONÍVEL - BUTTON ****/
 
@@ -305,6 +304,14 @@ main .select-place .places-unavailable div {
 
 main .select-place .places-unavailable div span {
   color: var(--red);
+}
+
+main .select-place .bathroom-icon{
+  grid-area: a10;
+}
+
+main .select-place .coffee-icon{
+  grid-area: a12;
 }
 
 main .select-place .bathroom-icon,
@@ -344,12 +351,16 @@ main .select-place .available1 {
   color: var(--green);
   border: 1px solid var(--green);
   font-weight: 600;
+
+  grid-area: a11;
 }
 
 main .select-place .unavailable1 {
   background-color: var(--red);
   color: var(--white);
   font-weight: 600;
+
+  grid-area: a14;
 }
 
 /********** FOOTER **********/
