@@ -392,6 +392,11 @@ footer {
 }
 
 footer .capacity-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   position: fixed;
   bottom: 4rem;
 
@@ -399,6 +404,24 @@ footer .capacity-status {
   height: 4rem;
 
   background-color: var(--white);
+}
+
+footer .capacity-status span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--orange);
+
+  margin-right: 1rem;
+}
+
+footer .capacity-status span span {
+  font-size: 1.6rem;
+}
+
+footer .capacity-status img {
+  width: 2rem;
+  height: 3rem;
+  margin-left: -.5rem;
 }
 
 /**** BARRA DE NAVEGAÇÃO (NAV BAR) ****/
