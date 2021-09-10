@@ -411,7 +411,7 @@ footer .capacity-status span {
   font-weight: 700;
   color: var(--orange);
 
-  margin-right: 1rem;
+  margin-right: .8rem;
 }
 
 footer .capacity-status span span {
@@ -419,13 +419,17 @@ footer .capacity-status span span {
 }
 
 footer .capacity-status img {
-  width: 2rem;
+  width: 2.2rem;
   height: 3rem;
-  margin-left: -.5rem;
+  margin-left: -.6rem;
 }
 
 /**** BARRA DE NAVEGAÇÃO (NAV BAR) ****/
 footer .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   position: fixed;
   bottom: 0; 
 
@@ -433,4 +437,37 @@ footer .nav-bar {
   height: 4rem;
 
   background-color: var(--orange);
+}
+
+footer .nav-bar div {
+  width: 90vw;
+
+  margin-top: .2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .nav-bar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+}
+
+/* footer .nav-bar :first-child {
+  margin-left: .5rem;
+}
+
+footer .nav-bar :last-child {
+  margin-right: .5rem;
+} */
+
+footer .nav-bar a img {
+  width: 1.8rem;
+  height: 1.7rem;
 }
