@@ -459,14 +459,6 @@ footer .nav-bar div a {
   color: var(--white);
 }
 
-/* footer .nav-bar :first-child {
-  margin-left: .5rem;
-}
-
-footer .nav-bar :last-child {
-  margin-right: .5rem;
-} */
-
 footer .nav-bar div a img {
   width: 1.8rem;
   height: 1.7rem;
