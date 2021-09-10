@@ -52,7 +52,7 @@ header{
   align-items: center;
 
   width: 100vw;
-  height: 9.7rem;
+  height: 9rem;
 
   background-color: var(--white);
 }
@@ -110,7 +110,7 @@ header{
   align-items: center;
 
   width: 100vw;
-  height: 5rem;
+  height: 4.5rem;
 
   margin-top: .2rem;
 
@@ -163,7 +163,120 @@ header{
 /********** CONTEÚDO PRINCIPAL **********/
 /**** ESCOLHA O LUGAR (SELECT PLACE) ****/
 
+main{
+  display: flex;
+  justify-content: center;
+}
 
+main .select-place{
+  /* display: grid;
+  grid-template-areas: 
+  'a1 a1 a1 a1 a1 a1'
+  'a2 a2 a2 a2 a2 a2'
+  'a2 a2 a2 a2 a2 a2'
+  'a3 a3 a3 a3 a3 a3'
+  'a4 a4 a4 a4 a4 a4'
+  'a5 a5 a5 a5 a5 a5'
+  'a6 a6 a6 a6 a6 a6'
+  'a7 a7 a7 a7 a7 a7'
+  'a8 a8 a8 a8 a8 a8'
+  'a9 a9 a9 a9 a9 a9'; */
+
+  width: 95%;
+  height: 28rem;
+
+  margin-top: .4rem;
+
+  background-color: var(--white);
+
+  border: 1px solid var(--grey-light);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/**** QUANDO TEM MESA DISPONÍVEL ****/
+main .select-place .places-available {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  
+  color: var(--green);
+  font-weight: 600;
+
+  border-radius: .5rem;
+
+  background-color: var(--white);
+
+  height: 4rem;
+
+  border: 1px solid var(--green);
+}
+
+main .select-place .places-available div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin-left: 1rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 50%;
+
+  background-color: var(--green);
+}
+
+main .select-place .places-available div span {
+  color: var(--white);
+}
+
+
+
+main .select-place .first-button {
+  width: 95%;
+}
+
+main .select-place .first-button div{
+  margin-right: 11.2rem;
+}
+
+/**** QUANDO NÃO TEM MESA DISPONÍVEL ****/
+
+main .select-place .places-unavailable {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  
+  color: var(--white);
+  font-weight: 600;
+
+  border-radius: .5rem;
+
+  background-color: var(--red);
+
+  height: 4rem;
+}
+
+main .select-place .places-unavailable div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin-left: 1rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 50%;
+
+  background-color: var(--white);
+}
+
+main .select-place .places-unavailable div span {
+  color: var(--red);
+}
 
 /********** FOOTER **********/
 /**** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) ****/
