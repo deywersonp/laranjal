@@ -173,17 +173,19 @@ main{
 main .select-place{
   display: grid;
   grid-template-areas: 
-  'a1 a1 a1 a1 a1 a1'
-  'a2 a2 a2 a2 a2 a10'
-  'a11 a3 a3 a3 a3 a10'
-  'a11 a3 a3 a3 a3 a12'
-  'a11 a5 a5 a5 a5 a12'
-  'a14 a5 a5 a5 a5 a15'
-  'a14 a7 a7 a7 a7 a16'
-  'a14 a7 a7 a7 a7 a16';
+  'a1 a1 a1'
+  'a1 a1 a1'
+  'a2 a2 a3'
+  'a2 a2 a3'
+  'a2 a2 a3'
+  'a2 a2 a3'
+  'a2 a2 a4'
+  'a2 a2 a4';
+  
+  justify-content: center;
 
   width: 95%;
-  height: 28rem;
+  height: 24.5rem;
 
   margin-top: .4rem;
 
@@ -191,6 +193,51 @@ main .select-place{
 
   border: 1px solid var(--grey-light);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+main .select-place .grid-container1{
+  grid-area: a1;
+}
+
+main .select-place .grid-container2{
+  margin-top: .2rem;
+
+  grid-area: a2;
+  display: grid;
+  grid-template-areas: 
+  'a4 a4 a4 a4'
+  'a5 a6 a6 a6'
+  'a5 a6 a6 a6'
+  'a5 a6 a6 a6';
+}
+
+main .select-place .grid-container2 .grid-container2-sub1{
+  grid-area: a4;
+}
+
+main .select-place .grid-container2 .grid-container2-sub2{
+  margin-top: .3rem;
+  margin-left: .5rem;
+
+  grid-area: a6;
+}
+
+main .select-place .grid-container2 .grid-container2-sub2 .tb1,
+main .select-place .grid-container2 .grid-container2-sub2 .tb2 {
+  margin-bottom: .6rem;
+}
+
+main .select-place .grid-container2 .grid-container2-sub3 {
+  margin-top: .3rem;
+
+  grid-area: a5;
+}
+
+main .select-place .grid-container3{
+ grid-area: a3;
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ justify-content: flex-end;
 }
 
 /**** QUANDO TEM MESA DISPONÍVEL - BUTTON ****/
@@ -234,7 +281,6 @@ main .select-place .places-available div span {
 main .select-place .first-button {
   margin-top: 1rem;
   width: 28.8rem;
-  grid-area: a1;
 }
 
 main .select-place .first-button div{
@@ -242,33 +288,21 @@ main .select-place .first-button div{
 }
 
 main .select-place .second-button {
-  width: 22rem;
-  grid-area: a2;
+  width: 23.5rem;
 }
 
 main .select-place .second-button div{
-  margin-right: 7rem;
+  margin-right: 9rem;
 }
 
 main .select-place .third-button {
-  width: 15.3rem;
+  width: 17.5rem;
 }
 
 main .select-place .third-button div{
-  margin-right: 4.5rem;
+  margin-right: 5rem;
 }
 
-main .select-place .tb1 {
-  grid-area: a3; 
-}
-
-main .select-place .tb2 {
-  grid-area: a5; 
-}
-
-main .select-place .tb3 {
-  grid-area: a7; 
-}
 /**** QUANDO NÃO TEM MESA DISPONÍVEL - BUTTON ****/
 
 main .select-place .places-unavailable {
@@ -306,22 +340,14 @@ main .select-place .places-unavailable div span {
   color: var(--red);
 }
 
-main .select-place .bathroom-icon{
-  grid-area: a10;
-}
-
-main .select-place .coffee-icon{
-  grid-area: a12;
-}
-
 main .select-place .bathroom-icon,
 main .select-place .coffee-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 3rem;
-  height: 6rem;
+  width: 4rem;
+  height: 7rem;
 
   border-radius: .5rem;
   background-color: var(--grey);
@@ -340,7 +366,7 @@ main .select-place .meeting-two {
   align-items: center;
   justify-content: center;
 
-  width: 3.6rem;
+  width: 5rem;
   height: 6rem;
 
   border-radius: .5rem;
@@ -351,16 +377,12 @@ main .select-place .available1 {
   color: var(--green);
   border: 1px solid var(--green);
   font-weight: 600;
-
-  grid-area: a11;
 }
 
 main .select-place .unavailable1 {
   background-color: var(--red);
   color: var(--white);
   font-weight: 600;
-
-  grid-area: a14;
 }
 
 /********** FOOTER **********/
