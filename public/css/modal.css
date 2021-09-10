@@ -23,13 +23,13 @@
 
 .modal-wrapper .modal {
   width: 95%;
-  height: 40rem;
+  height: 42rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  margin-top: 7rem;
+  margin-top: 6rem;
   
   background-color: var(--white);
 
@@ -179,6 +179,8 @@
   font-weight: 500;
   font-size: 1.2rem;
   width: 8rem;
+
+  margin-left: .3rem;
 }
 
 
@@ -228,6 +230,41 @@
   margin-top: 1.2rem;
 }
 
+.modal-wrapper .modal .modal-footer .table-subtitle > span {
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  color: var(--grey);
+
+  margin-top: .2rem;
+}
+
+.modal-wrapper .modal .modal-footer .table-subtitle div {
+  padding: .2rem;
+
+  margin-top: 1rem;
+
+  border: 1px solid var(--grey);
+  border-radius: .5rem;
+}
+
 .modal-wrapper .modal .modal-footer .table-subtitle .orange1{
   width: 2.1rem;
+  transform: translateX(18%);
+}
+
+.modal-wrapper .modal .modal-footer .table-subtitle div .span1 {
+  color: var(--orange);
+}
+
+.modal-wrapper .modal .modal-footer .table-subtitle div .span2 {
+  color: var(--green);
+}
+
+.modal-wrapper .modal .modal-footer .table-subtitle div .span3 {
+  color: var(--grey);
+}
+
+.modal-wrapper .modal .modal-footer .table-subtitle div .span4 {
+  color: var(--blue);
 }
