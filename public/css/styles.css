@@ -387,3 +387,27 @@ main .select-place .unavailable1 {
 
 /********** FOOTER **********/
 /**** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) ****/
+footer {
+  position: relative;
+}
+
+footer .capacity-status {
+  position: fixed;
+  bottom: 4rem;
+
+  width: 100vw;
+  height: 4rem;
+
+  background-color: var(--white);
+}
+
+/**** BARRA DE NAVEGAÇÃO (NAV BAR) ****/
+footer .nav-bar {
+  position: fixed;
+  bottom: 0; 
+
+  width: 100vw;
+  height: 4rem;
+
+  background-color: var(--orange);
+}
