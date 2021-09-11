@@ -28,7 +28,7 @@ function criaPrimeiraFileiraMesas() {
             img.src = './public/images/green-circle.svg';
             img.alt = 'Disponível';
             img.classList.add('table-available');
-            img.id = `Mesa-0${inicio}`
+            img.id = `Mesa-A${inicio}`
             primeiraDiv.appendChild(img);
         }
     }
@@ -53,7 +53,7 @@ function criaSegundaFileiraMesas() {
             img.src = './public/images/green-circle.svg';
             img.alt = 'Disponível';
             img.classList.add('table-available');
-            img.id = `Mesa-0${inicio2}`
+            img.id = `Mesa-A${inicio2}`
             segundaDiv.appendChild(img);
         }
 }

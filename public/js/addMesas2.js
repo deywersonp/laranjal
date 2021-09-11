@@ -20,7 +20,6 @@ function criarTerceiraFileiraMesas() {
       img.classList.add('table-unavailable');
       primeiraDiv.appendChild(img);
     } else if (inicio3 === fim3) {
-      console.log('36')
       let div = document.createElement('div');
       div.classList.add('table-separator')
       place02.appendChild(div);
@@ -29,7 +28,7 @@ function criarTerceiraFileiraMesas() {
       img.src = './public/images/green-circle.svg';
       img.alt = 'Disponível';
       img.classList.add('table-available');
-      img.id = `Mesa-0${inicio3}`
+      img.id = `Mesa-A${inicio3}`
       primeiraDiv.appendChild(img);
     }
   }
@@ -54,7 +53,7 @@ function criaQuartaFileiraMesas() {
       img.src = './public/images/green-circle.svg';
       img.alt = 'Disponível';
       img.classList.add('table-available');
-      img.id = `Mesa-0${inicio4}`
+      img.id = `Mesa-A${inicio4}`
       segundaDiv.appendChild(img);
     }
 }
