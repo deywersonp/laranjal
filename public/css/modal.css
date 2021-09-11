@@ -85,6 +85,20 @@
   margin-top: 1rem;
 }
 
+.modal-wrapper .modal .place01,
+.modal-wrapper .modal .place02 {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-wrapper .modal .place01 .place01-1,
+.modal-wrapper .modal .place01 .place01-2,
+.modal-wrapper .modal .place02 .place02-1,
+.modal-wrapper .modal .place02 .place02-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .modal-wrapper .modal .place02 {
   margin-top: 2rem;
 }
@@ -97,7 +111,13 @@
 
 .modal-wrapper .modal .table-filled {
   width: 2.2rem;
+  transform: translateY(-10%);
 }
+
+/* .modal-wrapper .modal .place02 .table-filled{
+
+} */
+
 
 .modal-wrapper .modal .table-separator {
   width: 100%;
