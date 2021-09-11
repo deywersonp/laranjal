@@ -15,8 +15,8 @@
   background-color: rgba(73, 74, 77, 0.8);
 
   /* Atribuir visibility hidden e opacity 0 quando terminar */
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
 
   z-index: 1;
 }

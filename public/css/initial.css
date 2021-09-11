@@ -99,10 +99,6 @@ header{
   margin-right: 1.5rem;
 }
 
-.second-container .stories :last-child {
-  margin-right: 0;
-}
-
 .second-container p {
   margin-top: .5rem;
   font-weight: 500;
@@ -139,7 +135,6 @@ header{
 
   border: 1px solid var(--grey);
 }
-
 
 .second-container .input-selector button {
   width: 7rem;
