@@ -1,65 +1,63 @@
 
-let modalBody01 = document.querySelector('#modalBody01')
+let place01 = document.querySelector('.table-content.place01');
 
-function criaMesas() {
-    let inicio = 1;
-    let fim = 20;
+let inicio = 1;
+let fim = 13;
+
+let inicio2 = 13;
+let fim2 = 24;
+
+
+function criaPrimeiraFileiraMesas() {
+    let primeiraDiv = document.createElement('div');
+    primeiraDiv.classList.add('place01-1');
+
+    place01.appendChild(primeiraDiv);
 
     for (inicio; inicio <= fim; inicio++) {
-        //Adiciona dentro do modal
-        let box = document.createElement('div');
-        box.classList.add('posicao-mesa');
-        box.classList.add('box');
-        box.id = `mesa-0${inicio}`
-        modalBody01.appendChild(box)
-
-        //  Adiciona dentro do box
-        let link = document.createElement('a');
-        link.href = "#";
-        box.appendChild(link)
-
-        if (inicio % 2 == 0) {
-            let image = document.createElement('img');
-            image.src = "./public/img/orange-disable.png";
-            image.style.width = "65px";
-            image.style.height = "65px";
-            image.alt = "Indisponível"
-            box.appendChild(image)
-
-            let paragraph1 = document.createElement('p')
-            paragraph1.classList.add("text-center");
-            paragraph1.classList.add("align-middle");
-            paragraph1.innerHTML = "Indisponível"
-            box.appendChild(paragraph1)
-
-            //Adiciona dentro do paragraph2
-            let span = document.createElement('span')
-            span.classList.add("font-weight-bold");
-            span.innerHTML = "Distanciamento COVID-19";
-            box.appendChild(span)
+        if (inicio % 2 === 0) {
+            let img = document.createElement('img');
+            img.src = './public/images/cancel.svg';
+            img.alt = 'Bloqueado';
+            img.classList.add('table-unavailable');
+            primeiraDiv.appendChild(img);
+        } else if (inicio === 13) {
+            let div = document.createElement('div');
+            div.classList.add('table-separator')
+            place01.appendChild(div);
         } else {
-            box.classList.add('disponivel');
-
-            let image = document.createElement('img');
-            image.src = "./public/img/orange-available.png";
-            image.style.width = "65px";
-            image.style.height = "65px";
-            image.alt = "Disponível"
-            box.appendChild(image)
-
-            let paragraph1 = document.createElement('p')
-            paragraph1.classList.add("text-center");
-            paragraph1.classList.add("align-middle");
-            paragraph1.innerHTML = `${box.id} - Disponível`
-            box.appendChild(paragraph1)
-
-            //Adiciona dentro do paragraph2
-            let span = document.createElement('span')
-            span.classList.add("font-weight-bold");
-            span.innerHTML = "Selecionar este Lugar";
-            box.appendChild(span)
+            let img = document.createElement('img');
+            img.src = './public/images/green-circle.svg';
+            img.alt = 'Disponível';
+            img.classList.add('table-available');
+            img.id = `Mesa-0${inicio}`
+            primeiraDiv.appendChild(img);
         }
     }
+
+    criaSegundaFileiraMesas();
 }
 
-criaMesas();
+function criaSegundaFileiraMesas() {
+    let segundaDiv = document.createElement('div');
+    segundaDiv.classList.add('place01-2');
+    place01.appendChild(segundaDiv);
+
+    for (inicio2; inicio2 <= fim2; inicio2++)
+        if (inicio2 % 2 === 1) {
+            let img = document.createElement('img');
+            img.src = './public/images/cancel.svg';
+            img.alt = 'Bloqueado';
+            img.classList.add('table-unavailable');
+            segundaDiv.appendChild(img);
+        } else {
+            let img = document.createElement('img');
+            img.src = './public/images/green-circle.svg';
+            img.alt = 'Disponível';
+            img.classList.add('table-available');
+            img.id = `Mesa-0${inicio2}`
+            segundaDiv.appendChild(img);
+        }
+}
+
+criaPrimeiraFileiraMesas();
