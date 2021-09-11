@@ -1,12 +1,10 @@
-
 let place01 = document.querySelector('.table-content.place01');
 
 let inicio = 1;
 let fim = 13;
 
-let inicio2 = 13;
-let fim2 = 24;
-
+let inicio2 = fim;
+let fim2 = fim + 11;
 
 function criaPrimeiraFileiraMesas() {
     let primeiraDiv = document.createElement('div');
@@ -21,7 +19,7 @@ function criaPrimeiraFileiraMesas() {
             img.alt = 'Bloqueado';
             img.classList.add('table-unavailable');
             primeiraDiv.appendChild(img);
-        } else if (inicio === 13) {
+        } else if (inicio === fim) {
             let div = document.createElement('div');
             div.classList.add('table-separator')
             place01.appendChild(div);
