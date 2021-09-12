@@ -1,68 +1,66 @@
 containerTablePlace = document.querySelector('.container-table-place');
 
-console.log(containerTablePlace);
-
 function insertTables() {
-    let inicio = 1;
-    let fim = 19;
+    let start = 1;
+    let end = 19;
 
-    let inicio2 = 1;
+    let start2 = 1;
     let howMany = 12;
 
 
-    for (inicio2; inicio2 <= howMany; inicio2++) {
-        if (inicio2 === 1) {
+    for (start2; start2 <= howMany; start2++) {
+        if (start2 === 1) {
             id = 1
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 2) {
+        if (start2 === 2) {
             id = 21
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 3) {
+        if (start2 === 3) {
             id = 41
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 4) {
+        if (start2 === 4) {
             id = 61
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 5) {
+        if (start2 === 5) {
             id = 81
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 6) {
+        if (start2 === 6) {
             id = 101
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 7) {
+        if (start2 === 7) {
             id = 121
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 8) {
+        if (start2 === 8) {
             id = 141
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 9) {
+        if (start2 === 9) {
             id = 161
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 10) {
+        if (start2 === 10) {
             id = 181
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 11) {
+        if (start2 === 11) {
             id = 201
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
-        if (inicio2 === 12) {
+        if (start2 === 12) {
             id = 221
-            createTables(id, inicio, fim);
+            createTables(id, start, end);
         }
     }
 }
 
-function createTables(id, inicio, fim) {
+function createTables(id, start, end) {
     let firstGroup = document.createElement('div');
     firstGroup.classList.add('table-place')
 
@@ -73,8 +71,8 @@ function createTables(id, inicio, fim) {
     let whoReceive = firstGroup;
     containerTablePlace.appendChild(firstGroup)
 
-    for (inicio; inicio <= fim; inicio++) {
-        if (inicio % 2 === 0) {
+    for (start; start <= end; start++) {
+        if (start % 2 === 0) {
             let img = document.createElement('img');
             img.src = '../images/cancel.svg';
             img.alt = 'Bloqueado';
@@ -82,7 +80,7 @@ function createTables(id, inicio, fim) {
             whoReceive.appendChild(img);
             id++;
 
-        } else if (inicio === 11) {
+        } else if (start === 11) {
             let div = document.createElement('div');
             div.classList.add('table-separator')
             containerTablePlace.appendChild(div);
@@ -115,8 +113,6 @@ function createTables(id, inicio, fim) {
             id++;
         }
     }
-
-    return id;
 };
 
 insertTables();
