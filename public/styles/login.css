@@ -1,6 +1,5 @@
 body {
-    background: var(--white);
-
+    background: #002A33;
     justify-content: center;
     align-items: center;
 }
@@ -24,6 +23,8 @@ label {
 }
 
 .container_login {
+    width: 360px;
+    min-height: 640px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,9 +33,11 @@ label {
     max-width: 380px;
     height: 640px;
     padding: 1.2rem;
+    background: var(--white);
 }
 
 .container_buttons_input {
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -52,6 +55,7 @@ label {
 }
 
 .container_fcamara p {
+    margin-top: 10px;
     width: 100%;
     font-size: 1.5rem;
     color: var(--grey);
@@ -98,7 +102,7 @@ label {
 }
 
 .buttons_signin_forgotPassword button {
-    min-width: 160px;
+    width: 150px;
     height: 44px;
 }
 
