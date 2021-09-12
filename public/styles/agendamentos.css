@@ -47,13 +47,16 @@ header{
 
 main{
   width: 100vw;
+  height: calc(100% - 9.6rem) ;
   display: flex;
 
   align-items: center;
-  justify-content: center;
 
   flex-direction: column;
+
+  background-color: var(--white);
 }
+/***** CONTEÚDO PRINCIPAL - HEADER *****/
 
 main .main-header{
   width: 100%;
@@ -69,6 +72,7 @@ main .main-header button {
   height: 2.42rem;
 
   margin-left: -2rem;
+  background-color: var(--white);
 }
 
 main .main-header span { 
@@ -80,6 +84,7 @@ main .main-header span {
   color: var(--grey);
 }
 
+/***** CONTEÚDO PRINCIPAL - SEPARATOR *****/
 main .separator{
   width: 96%;
 
@@ -90,7 +95,7 @@ main .separator{
   background-color: var(--grey);
 }
 
-/********** INPUT INFO **********/
+/***** CONTEÚDO PRINCIPAL - INPUT INFO *****/
 main .input-info {
   margin-right: -10.3rem;
 }
@@ -110,9 +115,14 @@ main .input-info input {
   background-color: var(--blue-black);
 }
 
+/***** CONTEÚDO PRINCIPAL - MAIN CONTENT *****/
+main .main-content {
+  width: 96%;
+  height: calc(100% - 7.22rem);
+}
+
+
 /********** FOOTER **********/
-/**** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) ****/
-/**** BARRA DE NAVEGAÇÃO (NAV BAR) ****/
 footer .nav-bar {
   display: flex;
   align-items: center;
