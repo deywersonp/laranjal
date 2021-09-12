@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../images/orange.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+
+    <title>Cadastro :: Laranjal</title>
+</head>
+
+<body>
+    <div class="container_register">
+
+        <img src="../images/laranjal-orange.svg" id="logo_laranjal" alt="Logo - Laranjal">
+
+        <div class="container_buttons_input">
+
+            <div class="buttons_login_signup">
+                <button type="submit" id="button_login">
+                    Login
+                </button>
+                <button type="submit" id="button_signup">
+                    Cadastro
+                </button>
+            </div>
+
+            <div class="inputs_register">
+                <div class="input_nickname">
+                    <label for="userNickname">
+                        nome social
+                    </label>
+                    <input type="text" name="userNickname" id="userNickname">
+                </div>
+                <div class="input_email">
+                    <label for="userEmail">
+                        e-mail
+                    </label>
+                    <input type="email" name="userEmail" id="userEmail">
+                </div>
+                <div class="inputs_password">
+                    <div class="input_password">
+                        <label for="userPassword">
+                            senha
+                        </label>
+                        <input type="password" name="userPassword" id="userConfirmPassword">
+                    </div>
+                    <div class="input_confirmPassword">
+                        <label for="userConfirmPassword">
+                            confirmar senha
+                        </label>
+                        <input type="password" name="userConfirmPassword" id="userConfirmPassword">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="button_register">
+                Cadastrar
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
