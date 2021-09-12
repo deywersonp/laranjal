@@ -45,66 +45,8 @@ header{
   background-color: var(--green);
 }
 
-
-/********** STORIES **********/
-
-.second-container .stories {
-  display: flex;
-  flex-direction: row;
-
-  overflow-x: auto;
-  align-items: center;
-
-  width: 100vw;
-  height: 9rem;
-
-  background-color: var(--white);
-}
-
-.second-container .stories .circle {
-  width: 5.7rem;
-  height: 5.7rem;
-
-  border-radius: 50%;
-  border: .2rem solid var(--orange);
-
-  background-color: var(--green);
-}
-
-.second-container .stories .first-story .your-stories {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-left: 1rem;
-
-  width: 5.6rem;
-  height: 5.6rem;
-  border-radius: 50%;
-  background-color: var(--grey);
-}
-
-.second-container .stories .first-story .your-stories img {
-  width: 2.8rem;
-}
-
-.second-container .stories .first-story p{
- text-align: center;
- margin-left: -1rem;
- font-weight: 500;
-}
-
-.second-container .stories .first-story .your-stories,
-.second-container .stories .circle {
-  margin-right: 1.5rem;
-}
-
-.second-container p {
-  margin-top: .5rem;
-  font-weight: 500;
-}
 /********** INPUTS DE SELEÇÃO (INPUT SELECTOR) **********/
-.second-container .input-selector {
+.input-selector {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -117,12 +59,12 @@ header{
   background-color: var(--white);
 }
 
-.second-container .input-selector select{
+.input-selector select{
   margin-left: 1rem;
 }
 
-.second-container .input-selector select,
-.second-container .input-selector input {
+.input-selector select,
+.input-selector input {
   width: 12rem;
   height: 3.5rem;
 
@@ -136,7 +78,7 @@ header{
   border: 1px solid var(--grey);
 }
 
-.second-container .input-selector button {
+.input-selector button {
   width: 7rem;
   height: 3.5rem;
 
@@ -149,9 +91,9 @@ header{
   border: 1px solid var(--orange);
 }
 
-.second-container .input-selector select,
-.second-container .input-selector input,
-.second-container .input-selector button {
+.input-selector select,
+.input-selector input,
+.input-selector button {
   margin-right: 1rem;
   
   font-size: 1.1rem;
@@ -160,267 +102,14 @@ header{
 }
 
 /********** CONTEÚDO PRINCIPAL **********/
-/**** ESCOLHA O LUGAR (SELECT PLACE) ****/
 
 main{
   display: flex;
   justify-content: center;
 }
 
-main .select-place{
-  display: grid;
-  grid-template-areas: 
-  'a1 a1 a1'
-  'a1 a1 a1'
-  'a2 a2 a3'
-  'a2 a2 a3'
-  'a2 a2 a3'
-  'a2 a2 a3'
-  'a2 a2 a4'
-  'a2 a2 a4';
-  
-  justify-content: center;
-
-  width: 95%;
-  height: 24.5rem;
-
-  margin-top: .4rem;
-
-  background-color: var(--white);
-
-  border: 1px solid var(--grey-light);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-main .select-place .grid-container1{
-  grid-area: a1;
-}
-
-main .select-place .grid-container2{
-  margin-top: .2rem;
-
-  grid-area: a2;
-  display: grid;
-  grid-template-areas: 
-  'a4 a4 a4 a4'
-  'a5 a6 a6 a6'
-  'a5 a6 a6 a6'
-  'a5 a6 a6 a6';
-}
-
-main .select-place .grid-container2 .grid-container2-sub1{
-  grid-area: a4;
-}
-
-main .select-place .grid-container2 .grid-container2-sub2{
-  margin-top: .3rem;
-  margin-left: .5rem;
-
-  grid-area: a6;
-}
-
-main .select-place .grid-container2 .grid-container2-sub2 .tb1,
-main .select-place .grid-container2 .grid-container2-sub2 .tb2 {
-  margin-bottom: .6rem;
-}
-
-main .select-place .grid-container2 .grid-container2-sub3 {
-  margin-top: .3rem;
-
-  grid-area: a5;
-}
-
-main .select-place .grid-container3{
- grid-area: a3;
- display: grid;
- grid-template-rows: 1fr 1fr;
- justify-content: flex-end;
-}
-
-/**** QUANDO TEM MESA DISPONÍVEL - BUTTON ****/
-main .select-place .places-available {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  
-  color: var(--green);
-  font-weight: 600;
-
-  border-radius: .5rem;
-
-  background-color: var(--white);
-
-  height: 4rem;
-
-  border: 1px solid var(--green);
-}
-
-main .select-place .places-available div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  margin-left: 1rem;
-
-  width: 2rem;
-  height: 2rem;
-
-  border-radius: 50%;
-
-  background-color: var(--green);
-}
-
-main .select-place .places-available div span {
-  color: var(--white);
-}
-
-main .select-place .first-button {
-  margin-top: 1rem;
-  width: 28.8rem;
-}
-
-main .select-place .first-button div{
-  margin-right: 11.2rem;
-}
-
-main .select-place .second-button {
-  width: 23.5rem;
-}
-
-main .select-place .second-button div{
-  margin-right: 9rem;
-}
-
-main .select-place .third-button {
-  width: 17.5rem;
-}
-
-main .select-place .third-button div{
-  margin-right: 5rem;
-}
-
-/**** QUANDO NÃO TEM MESA DISPONÍVEL - BUTTON ****/
-
-main .select-place .places-unavailable {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  
-  color: var(--white);
-  font-weight: 600;
-
-  border-radius: .5rem;
-
-  background-color: var(--red);
-
-  height: 4rem;
-}
-
-main .select-place .places-unavailable div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  margin-left: 1rem;
-
-  width: 2rem;
-  height: 2rem;
-
-  border-radius: 50%;
-
-  background-color: var(--white);
-}
-
-main .select-place .places-unavailable div span {
-  color: var(--red);
-}
-
-main .select-place .bathroom-icon,
-main .select-place .coffee-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 4rem;
-  height: 7rem;
-
-  border-radius: .5rem;
-  background-color: var(--grey);
-}
-
-main .select-place .bathroom-icon img,
-main .select-place .coffee-icon img {
-  width: 1.5rem;
-  height: 2rem;
-}
-
-main .select-place .meeting-one,
-main .select-place .meeting-two {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 5rem;
-  height: 6rem;
-
-  border-radius: .5rem;
-}
-
-main .select-place .available1 {
-  background-color: var(--white);
-  color: var(--green);
-  border: 1px solid var(--green);
-  font-weight: 600;
-}
-
-main .select-place .unavailable1 {
-  background-color: var(--red);
-  color: var(--white);
-  font-weight: 600;
-}
-
 /********** FOOTER **********/
 /**** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) ****/
-footer {
-  position: relative;
-}
-
-footer .capacity-status {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  position: fixed;
-  bottom: 4rem;
-
-  width: 100vw;
-  height: 4rem;
-
-  background-color: var(--white);
-}
-
-footer .capacity-status span {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--orange);
-
-  margin-right: .8rem;
-}
-
-footer .capacity-status span span {
-  font-size: 1.6rem;
-}
-
-footer .capacity-status img {
-  width: 2.2rem;
-  height: 3rem;
-  margin-left: -.6rem;
-}
-
 /**** BARRA DE NAVEGAÇÃO (NAV BAR) ****/
 footer .nav-bar {
   display: flex;
@@ -431,9 +120,9 @@ footer .nav-bar {
   bottom: 0; 
 
   width: 100vw;
-  height: 4rem;
+  height: 4.6rem;
 
-  background-color: var(--orange);
+  background-color: var(--blue-black);
 
   z-index: 2;
 }

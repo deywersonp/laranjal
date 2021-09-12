@@ -39,142 +39,27 @@
 
     <!-- ********** CONTEÚDO DO MEIO ********** -->
 
-    <div class="second-container">
-      <div class="stories">
 
-        <div class="first-story">
-          <div class="your-stories">
-            <img src="./public/images/plus.svg" alt="Adicionar stories">
-          </div>
-          <p>Seu Story</p>
-        </div>
+    <div class="input-selector">
+      <select name="unidades" id="unidades">
+        <option class="unidade" value="sp-1-1andar">São Paulo (1º)</option>
+        <option class="unidade" value="sp-1-2andar">São Paulo (2º)</option>
+        <option class="unidade" value="santos-1">Santos</option>
+      </select>
 
-        <div>
-          <div class="circle"></div>
-          <p>Maria Silva</p>
-        </div>
-
-        <div>
-          <div class="circle"></div>
-          <p>Felipe Ribei...</p>
-        </div>
-
-        <div>
-          <div class="circle"></div>
-          <p>Silvio Olive...</p>
-        </div>
-
-        <div>
-          <div class="circle"></div>
-          <p>Paola Pereir...</p>
-        </div>
-
-        <div>
-          <div class="circle"></div>
-          <p>Gilberto Fer...</p>
-        </div>
-
-      </div>
-
-      <div class="input-selector">
-        <select name="unidades" id="unidades">
-          <option class="unidade" value="sp-1-1andar">São Paulo (1º)</option>
-          <option class="unidade" value="sp-1-2andar">São Paulo (2º)</option>
-          <option class="unidade" value="santos-1">Santos</option>
-        </select>
-
-        <label class="sr-only" for="input-data">
-          Selecione a data
-        </label>
-        <input id="input-data" type="date">
-
-        <button>Reserva Rápida</button>
-      </div>
+      <label class="sr-only" for="input-data">
+        Selecione a data
+      </label>
+      <input id="input-data" type="date">
     </div>
 
     <!-- ********** CONTEÚDO PRINCIPAL ********** -->
 
     <main>
-      <div class="select-place">
-
-        <div class="grid-container1">
-          <button class="places-available first-button">
-            <div>
-              <span>A</span>
-            </div>
-            <span>15</span>
-          </button>
-        </div>
-
-        <div class="grid-container2">
-          <div class="grid-container2-sub1">
-            <button class="places-unavailable second-button">
-              <div>
-                <span>B</span>
-              </div>
-              <span>lotado</span>
-            </button>
-          </div>
-
-          <div class="grid-container2-sub2">
-            <button class="places-available third-button tb1">
-              <div>
-                <span>C</span>
-              </div>
-              <span>8</span>
-            </button>
-
-            <button class="places-unavailable third-button tb2">
-              <div>
-                <span>D</span>
-              </div>
-              <span>lotado</span>
-            </button>
-
-            <button class="places-available third-button tb3">
-              <div>
-                <span>E</span>
-              </div>
-              <span>2</span>
-            </button>
-          </div>
-
-          <div class="grid-container2-sub3">
-            <div class="meeting-one available1">Sala 1</div>
-            <div class="meeting-two unavailable1">lotado</div>
-          </div>
-        </div>
-
-        <div class="grid-container3">
-          <div class="bathroom-icon">
-            <img src="./public/images/bathroom.svg" alt="Banheiros">
-          </div>
-          <div class="coffee-icon">
-            <img src="./public/images/cup.svg" alt="Área do café">
-          </div>
-        </div>
-
-      </div>
     </main>
 
     <!-- ********** RODAPÉ ********** -->
     <footer>
-      <div class="capacity-status">
-        <span>Ocupação <span>32%</span></span>
-        <div class="ocupation-status">
-          <img src="./public/images/orange.svg" alt="Fruta Laranja">
-          <img src="./public/images/orange.svg" alt="Fruta Laranja">
-          <img src="./public/images/orange.svg" alt="Fruta Laranja">
-          <img src="./public/images/orange-available.svg" alt="Fruta Laranja 'Disponível'">
-          <img src="./public/images/orange-unavailable.svg" alt="Fruta Laranja 'Indisponível'">
-          <img src="./public/images/orange-unavailable.svg" alt="Fruta Laranja 'Indisponível'">
-          <img src="./public/images/orange-unavailable.svg" alt="Fruta Laranja 'Indisponível'">
-          <img src="./public/images/orange-unavailable.svg" alt="Fruta Laranja 'Indisponível'">
-          <img src="./public/images/orange-unavailable.svg" alt="Fruta Laranja 'Indisponível'">
-          <img src="./public/images/orange-unavailable.svg" alt="Fruta Laranja 'Indisponível'">
-        </div>
-      </div>
-
       <div class="nav-bar">
         <div>
           <a href="#" class="home">
@@ -199,8 +84,8 @@
         </div>
       </div>
     </footer>
-  </div>
 
+  </div>
   <!------- MODAL ------->
   <div class="modal-wrapper">
     <div class="modal">
