@@ -117,10 +117,46 @@ main .input-info input {
 
 /***** CONTEÚDO PRINCIPAL - MAIN CONTENT *****/
 main .main-content {
-  width: 96%;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
   height: calc(100% - 7.22rem);
+
+  align-items: center;
+
+  margin-top: 1.5rem;
 }
 
+main .main-content .container-table-place {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-content .table-place {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+  margin: auto;
+}
+
+main .main-content .table-place.second{
+  margin-bottom: 3rem;
+}
+
+main .main-content .table-place img { 
+  padding: .7rem;
+}
+
+main .main-content .container-table-place .table-separator{
+  width: 100%;
+  height: 2rem;
+
+  border: .2rem solid var(--grey); 
+  border-radius: .5rem;
+
+  background-color: #9D9D9D;
+}
 
 /********** FOOTER **********/
 footer .nav-bar {
