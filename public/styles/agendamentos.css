@@ -45,62 +45,6 @@ header{
   background-color: var(--green);
 }
 
-/********** INPUTS DE SELEÇÃO (INPUT SELECTOR) **********/
-.input-selector {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  width: 100vw;
-  height: 4.5rem;
-
-  margin-top: .2rem;
-
-  background-color: var(--white);
-}
-
-.input-selector select{
-  margin-left: 1rem;
-}
-
-.input-selector select,
-.input-selector input {
-  width: 12rem;
-  height: 3.5rem;
-
-  line-height: 1.5rem;
-  
-  font-weight: 500;
-  color: var(--grey);
-
-  background-color: var(--grey-light);
-
-  border: 1px solid var(--grey);
-}
-
-.input-selector button {
-  width: 7rem;
-  height: 3.5rem;
-
-  line-height: 1.4rem;
-
-  color: var(--white);
-  
-  background-color: var(--orange);
-
-  border: 1px solid var(--orange);
-}
-
-.input-selector select,
-.input-selector input,
-.input-selector button {
-  margin-right: 1rem;
-  
-  font-size: 1.1rem;
-
-  border-radius: .5rem;
-}
-
 /********** CONTEÚDO PRINCIPAL **********/
 
 main{

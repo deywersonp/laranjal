@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="../../public/images/orange.svg">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../public/styles/global.css">
+  <link rel="stylesheet" href="../../public/styles/agendamentos.css">
+  <link rel="stylesheet" href="../../public/styles/modal.css">
+
+  <title>Sistema de Agendamentos :: Laranjal</title>
+</head>
+
+<body>
+  <!-- ********** CABEÇALHO ********** -->
+
+  <div class="container">
+    <header>
+      <div class="header">
+        <a href="#">
+          <img src="../../public/images/laranjal-white.svg" alt="Laranjal - Logo">
+        </a>
+        <div class="profile-info">
+          <p>Yasmin Silva</p>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ********** CONTEÚDO DO MEIO ********** -->
+
+    <!-- ********** CONTEÚDO PRINCIPAL ********** -->
+
+    <main>
+    </main>
+
+    <!-- ********** RODAPÉ ********** -->
+    <footer>
+      <nav class="nav-bar">
+        <div>
+          <a href="#" class="home">
+            <img src="../../public/images/home.svg" alt="Home">
+            <span>Inicio</span>
+          </a>
+
+          <a href="#" class="my-reservations">
+            <img src="../../public/images/calendar.svg" alt="Calendário">
+            <span>Minhas Reservas</span>
+          </a>
+
+          <a href="#" class="feedback">
+            <img src="../../public/images/chat.svg" alt="Feedback">
+            <span>Feedback</span>
+          </a>
+
+          <a href="#" class="exit">
+            <img src="../../public/images/exit.svg" alt="Sair">
+            <span>Sair</span>
+          </a>
+        </div>
+      </nav>
+    </footer>
+
+  </div>
+  <!------- MODAL ------->
+  <div class="modal-wrapper">
+    <div class="modal">
+      <div class="modal-header">
+        <button class="back">
+          <img src="../../public/images/back-arrow.svg" alt="Voltar">
+        </button>
+        <span>Selecione a mesa de trabalho</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="main-content">
+        <div class="table-content place01">
+        </div>
+        <script src="../../public/imagesjs/addMesas.js"></script>
+
+        <div class="table-content place02">
+        </div>
+        <script src="../../public/js/addMesas2.js"></script>
+
+        <div class="modal-footer">
+          <div class="my-schedules">
+            <span>Meu agendamento</span>
+
+            <div class="container-table-selected">
+              <div class="blue-rectangle">
+                <img id="close-my-schedules" src="./public/images/x-button.svg" alt="close">
+              </div>
+              <div class="table-selected">
+                <img src="../../public/images/star.svg" alt="Star">
+                <input id="mesa-selecionada" type="text" readonly></input>
+              </div>
+              <div>
+                <input id="data-selecionada" type="text" readonly></input>
+                <span class="divider">-</span>
+                <input id="unidade-selecionada" type="text" readonly></input>
+              </div>
+            </div>
+
+            <button class="continue">Continuar</button>
+          </div>
+
+          <div class="table-subtitle">
+            <span>Legenda</span>
+            <div>
+              <img class="orange1" src="./public/images/orange.svg" alt="ocupada">
+              <span class="span1">ocupado</span>
+
+              <img src="./public/images/green-circle.svg" alt="ocupada">
+              <span class="span2">disponível</span>
+
+              <img src="./public/images/cancel.svg" alt="ocupada">
+              <span class="span3">indisponível</span>
+
+              <img class="star1" src="./public/images/star.svg" alt="ocupada">
+              <span class="span4">você</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../../public/js/modal.js"></script>
+  <script src="../../public/js/dataController.js"></script>
+  <script src="../../public/js/unidadeController.js"></script>
+</body>
+
+</html>
