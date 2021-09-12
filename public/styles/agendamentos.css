@@ -81,7 +81,7 @@ main .main-header span {
 }
 
 main .separator{
-  width: 92%;
+  width: 96%;
 
   margin-top: 1.2rem;
 
@@ -92,11 +92,11 @@ main .separator{
 
 /********** INPUT INFO **********/
 main .input-info {
-  margin-right: -8.2rem;
+  margin-right: -10.3rem;
 }
 
 main .input-info input {
-  width: 10.4rem;
+  width: 10.1rem;
   height: 2.3rem;
   
   padding: .2rem;
