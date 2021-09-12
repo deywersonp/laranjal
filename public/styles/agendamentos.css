@@ -35,14 +35,12 @@ header{
 }
 
 
-.header .profile-info .circle{
+.header .profile-info img{
   width: 3rem;
   height: 3rem;
-
-  margin-right: 1rem;
-
+  
   border-radius: 50%;
-  background-color: var(--green);
+  margin-right: 1rem;
 }
 
 /********** CONTEÚDO PRINCIPAL **********/
