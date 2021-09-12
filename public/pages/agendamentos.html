@@ -16,7 +16,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/agendamentos.css">
-  <!-- <link rel="stylesheet" href="../styles/modal.css"> -->
+  <link rel="stylesheet" href="../styles/selected-table-modal.css">
 
   <title>Sistema de Agendamentos :: Laranjal</title>
 </head>
@@ -48,12 +48,13 @@
       <div class="separator"></div>
 
       <div class="input-info">
-        <input class="input-info1" value="São Paulo 1º andar" type="text">
-        <input class="input-info2" value="12/09/2021" type="text">
+        <input class="input-info1" value="São Paulo 1º andar" type="text" readonly>
+        <input class="input-info2" value="12/09/2021" type="text" readonly>
       </div>
 
       <div class="main-content">
         <div class="container-table-place">
+          <script src="../js/addTables.js"></script>
         </div>
     </main>
 
@@ -84,51 +85,27 @@
       </nav>
     </footer>
 
-  </div>
-  <!------- MODAL ------->
-  <!-- <div class="modal-wrapper">
-    <div class="modal">
-      <div class="modal-header">
-        <button class="back">
-          <img src="../images/back-arrow.svg" alt="Voltar">
-        </button>
-        <span>Selecione a mesa de trabalho</span>
-      </div>
-
-      <div class="separator"></div>
-
-      <div class="main-content">
-        <div class="table-content place01">
+    <!------- MODAL ------->
+    <div class="modal-wrapper">
+      <div class="modal">
+        <button class="modal-close-button">X</button>
+        <input id="modal-input-table" type="text" readonly>
+        <div>
+          <input id="modal-input-unity" value="São Paulo 1º andar" type="text" readonly>
+          <span>
+            -
+          </span>
+          <input id="modal-input-date" value="12/09/2021" type="text" readonly>
         </div>
-        <script src="../imagesjs/addMesas.js"></script>
-
-        <div class="table-content place02">
-        </div>
-        <script src="../js/addMesas2.js"></script>
-      </div>
-
-      <div class="modal-footer">
-        <div class="table-subtitle">
-          <span>Legenda</span>
-          <div>
-            <img class="orange1" src="./public/images/orange.svg" alt="ocupada">
-            <span class="span1">ocupada</span>
-
-            <img src="./public/images/green-circle.svg" alt="ocupada">
-            <span class="span2">disponível</span>
-
-            <img src="./public/images/cancel.svg" alt="ocupada">
-            <span class="span3">indisponível</span>
-          </div>
-        </div>
+        <a class="modal-confirm-button" href="#">Continuar</a>
       </div>
     </div>
-  </div> -->
+  </div>
 
 
   <!-- SCRIPTS -->
-  <script src="../js/addTables.js"></script>
-  <script src="../js/tableController.js"></script>
+  <!-- <script src="../js/tableController.js"></script> -->
+  <script src="../js/modal.js"></script>
 </body>
 
 </html>

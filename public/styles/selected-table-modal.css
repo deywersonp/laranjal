@@ -1,0 +1,99 @@
+.modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(73, 74, 77, 0.8);
+
+  visibility: hidden;
+  opacity: 0;
+
+  z-index: 1;
+}
+
+.modal-wrapper .modal {
+  width: 95%;
+  max-width: 45rem;
+  height: 24.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--white);
+
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+.modal-wrapper .modal button {
+  background-color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--grey);
+  text-align: end;
+  
+  padding: 1rem;
+
+  margin-left: 25rem;
+}
+
+.modal-wrapper .modal button:hover {
+  cursor: pointer;
+}
+
+.modal-wrapper .modal .first-input{ 
+  justify-content: flex-end;
+}
+
+.modal-wrapper .modal #modal-input-table { 
+  width: 10rem;
+  
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--orange);
+
+  padding-top: 2rem;
+}
+
+.modal-wrapper .modal div #modal-input-unity,
+.modal-wrapper .modal div #modal-input-date {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.modal-wrapper .modal div #modal-input-unity {
+  width: 13rem;
+}
+.modal-wrapper .modal div #modal-input-date {
+  width: 10rem;
+}
+
+.modal-wrapper .modal .modal-confirm-button {
+  text-decoration: none;
+
+  background-color: var(--orange);
+
+  color: white;
+  font-size: 1.6rem;
+
+  padding: 1.1rem 1.9rem 1.1rem 1.9rem;
+
+  margin-top: 5rem;
+
+  border-radius: .5rem;
+}
