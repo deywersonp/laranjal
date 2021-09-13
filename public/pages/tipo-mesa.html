@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="../images/orange.svg">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/tipo-mesa.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+
+  <title>Sistema de Agendamentos :: Laranjal</title>
+</head>
+
+<body>
+  <!-- ********** CABEÇALHO ********** -->
+
+     <header>
+      <div class="header">
+        <a href="#">
+          <img src="../images/laranjal-white.svg" alt="Laranjal - Logo">
+        </a>
+        <div class="profile-info">
+          <p>Yasmin Silva</p>
+          <img src="../images/yasmin-photo.svg" alt="">
+        </div>
+      </div>
+    </header>
+
+     <!-- ********** CONTEÚDO PRINCIPAL ********** -->
+    
+    <div class="second-container">
+      
+      <div class="wrapper">
+          
+          <div class="ocupacao">
+            <button class="back">
+              <img src="../images/back-arrow.svg" alt="Voltar">
+            </button>
+            <span> Selecione a mesa de trabalho</span>          
+          </div>
+          
+          <div class="separator"></div>
+          
+          <div class="input-info">
+            <input class="input-info1" value="São Paulo 1º andar" type="text">
+            <input class="input-info2" value="12/09/2021" type="text">
+          </div>
+          
+          <span class="escolha"> O que você prefere ?</span>
+      
+            <div class="mesa">
+            <span > Quero escolher uma <p>das mesas disponíveis</p></span> 
+            <span > Não me importo onde <p>vou me sentar</p></span>
+            </div>
+          <div class="unidade">
+            
+            <img src="../images/especifica.svg" alt="">          
+            <img src="../images/aleatoria.svg" alt=""> 
+          </div>
+
+      </div>
+      
+   </div>
+
+
+    <!-- ********** RODAPÉ ********** -->
+    <footer class="view">
+      <nav class="nav-bar">
+        <div>
+          <a href="#" class="home">
+            <img src="../images/home.svg" alt="Home">
+            <span>Inicio</span>
+          </a>
+
+          <a href="#" class="my-reservations">
+            <img src="../images/calendar.svg" alt="Calendário">
+            <span>Minhas Reservas</span>
+          </a>
+
+          <a href="#" class="feedback">
+            <img src="../images/chat.svg" alt="Feedback">
+            <span>Feedback</span>
+          </a>
+
+          <a href="#" class="exit">
+            <img src="../images/exit.svg" alt="Sair">
+            <span>Sair</span>
+          </a>
+        </div>
+      </nav>
+    </footer>
+
+  <!------- MODAL ------->
+  <!-- <div class="modal-wrapper">
+    <div class="modal">
+      <div class="modal-header">
+        <button class="back">
+          <img src="../images/back-arrow.svg" alt="Voltar">
+        </button>
+        <span>Selecione a mesa de trabalho</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="main-content">
+        <div class="table-content place01">
+        </div>
+        <script src="../imagesjs/addMesas.js"></script>
+
+        <div class="table-content place02">
+        </div>
+        <script src="../js/addMesas2.js"></script>
+      </div>
+
+      <div class="modal-footer">
+        <div class="table-subtitle">
+          <span>Legenda</span>
+          <div>
+            <img class="orange1" src="./public/images/orange.svg" alt="ocupada">
+            <span class="span1">ocupada</span>
+
+            <img src="./public/images/green-circle.svg" alt="ocupada">
+            <span class="span2">disponível</span>
+
+            <img src="./public/images/cancel.svg" alt="ocupada">
+            <span class="span3">indisponível</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- SCRIPTS -->
+  <script src="../js/modal.js"></script>
+  <script src="../js/dataController.js"></script>
+  <script src="../js/unidadeController.js"></script>
+</body>
+
+</html>
