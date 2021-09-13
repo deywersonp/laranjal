@@ -1,31 +1,25 @@
-let inputData = document.querySelector('#input-data');
-let dataSelecionada = document.querySelector('#data-selecionada')
+let inputDate = document.querySelector('#input-date');
 
 // Interação entre os inputs de data
-let data = new Date();
-let dataAtual = data.toISOString().split('T')[0];
+let date = new Date();
+let currentDate = date.toISOString().split('T')[0];
 
-inputData.value = dataAtual;
-dataSelecionada.value = dataAtual;
-inputData.min = dataAtual;
+inputDate.value = currentDate;
+inputDate.min = currentDate;
 
-inputData.addEventListener('change', function () {
-  let dataDigitada = new Date(this.value)
+inputDate.addEventListener('change', function () {
+  let dateTyped = new Date(this.value)
 
-  if (dataDigitada < new Date(dataAtual)) {
-    inputData.value = dataAtual;
-    dataSelecionada.value = dataAtual;
+  if (dateTyped < new Date(currentDate)) {
+    inputDate.value = currentDate;
 
-    alert(`Informe uma data a partir do dia de hoje (${dataAtual}) !`)
+    alert(`Informe uma data a partir do dia de hoje (${currentDate}) !`)
   };
 
-  let dataConvertida = new Date(dataDigitada).getDay()
+  let dateConverted = new Date(dateTyped).getDay()
 
-  if (dataConvertida == 5 || dataConvertida == 6) {
+  if (dateConverted == 5 || dateConverted == 6) {
     alert("Escritório disponível apenas de segunda a sexta!")
-    inputData.value = dataAtual;
-    dataSelecionada.value = dataAtual;
-  } else {
-    dataSelecionada.value = inputData.value;
+    inputDate.value = currentDate;
   }
 });
