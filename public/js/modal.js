@@ -1,45 +1,45 @@
-let buttons = document.querySelectorAll('button.places-available');
-
-let mesas = document.querySelectorAll('.table-available')
-let inputMesaSelecionada = document.querySelector('#mesa-selecionada')
-
-let schedulesModal = document.querySelector('.modal-footer .my-schedules')
-let closeSchedulesModal = document.querySelector('#close-my-schedules')
-
 let modal = document.querySelector('div.modal-wrapper');
-let close = document.querySelector('.modal-header .back')
+let closeButton = document.querySelector('button.modal-close-button');
+let continueButton = document.querySelector('button.modal-continue-button');
+let modalInputTable = document.querySelector('input#modal-input-table');
+
+let guidelineModal = document.querySelector('div.modal-wrapper-guidelines');
+let backButton = document.querySelector('div.modal-guidelines-header .back');
+let guidelineInputTable = document.querySelector('input#modal-guidelines-input-table');
+
+let tables = document.querySelectorAll('.table-available');
+
 
 document.addEventListener('DOMContentLoaded', () => {
-  buttons.forEach((button) => {
-    button.addEventListener('click', openModal);
-  });
-
-  mesas.forEach((mesa) => {
-    mesa.addEventListener('click', getId);
-    mesa.addEventListener('click', mostrarMesaSelecionada);
+  tables.forEach((table) => {
+    table.addEventListener('click', getId);
   });
 });
 
-close.addEventListener('click', () => {
-  modal.classList.remove('active');
-  removerMesaSelecionada();
-});
+closeButton.addEventListener('click', closeModal);
+continueButton.addEventListener('click', openGuidelineModal);
+backButton.addEventListener('click', closeGuidelineModal);
 
-closeSchedulesModal.addEventListener('click', removerMesaSelecionada)
+function getId(event) {
+  let tableId = event.currentTarget.id
+  modalInputTable.value = tableId;
+  guidelineInputTable.value = tableId;
+  openModal();
+};
 
 function openModal() {
   modal.classList.add('active');
-}
+};
 
-function getId(event) {
-  let mesaId = event.currentTarget.id
-  inputMesaSelecionada.value = mesaId;
-}
+function closeModal() {
+  modal.classList.remove('active');
+};
 
-function mostrarMesaSelecionada() {
-  schedulesModal.classList.add('active');
-}
+function openGuidelineModal() {
+  guidelineModal.classList.add('active');
+};
 
-function removerMesaSelecionada() {
-  schedulesModal.classList.remove('active');
-}
+function closeGuidelineModal() {
+  closeModal();
+  guidelineModal.classList.remove('active');
+};
