@@ -40,7 +40,7 @@
 }
 
 
-.modal-wrapper .modal button {
+.modal-wrapper .modal .modal-close-button {
   background-color: var(--white);
   font-size: 2rem;
   font-weight: 700;
@@ -50,10 +50,6 @@
   padding: 1rem;
 
   margin-left: 25rem;
-}
-
-.modal-wrapper .modal button:hover {
-  cursor: pointer;
 }
 
 .modal-wrapper .modal .first-input{ 
@@ -83,9 +79,7 @@
   width: 10rem;
 }
 
-.modal-wrapper .modal .modal-confirm-button {
-  text-decoration: none;
-
+.modal-wrapper .modal .modal-continue-button {
   background-color: var(--orange);
 
   color: white;
