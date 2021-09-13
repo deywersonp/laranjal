@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/agendamentos.css">
   <link rel="stylesheet" href="../styles/selected-table-modal.css">
+  <link rel="stylesheet" href="../styles/guidelines-modal.css">
 
   <title>Sistema de Agendamentos :: Laranjal</title>
 </head>
@@ -102,6 +103,47 @@
     </div>
   </div>
 
+  <div class="modal-wrapper-guidelines">
+    <div class="modal-guidelines">
+      <div class="modal-guidelines-header">
+        <button class="back">
+          <img src="../images/back-arrow.svg" alt="Voltar">
+        </button>
+        <span>Orientações</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <form class="input-info" action="#" id="form1">
+        <input id="modal-guidelines-input-unity" value="São Paulo 1º andar" type="text" readonly>
+        <input id="modal-guidelines-input-date" value="12/09/2021" type="text" readonly>
+        <input id="modal-guidelines-input-table" value="Mesa-238" type="text" readonly>
+      </form>
+      <div class=guidelines-container>
+        <div class="guidelines">
+          <img src="../images/use-mask.svg" alt="Use máscara">
+          <p><strong>Máscara: </strong>uso obrigatório dentro de quaisquer ambientes do escritório.</p>
+        </div>
+        <div class="guidelines">
+          <img src="../images/use-alcohol.svg" alt="Use máscara">
+          <p><strong>Álcool em gel: </strong>está distribuído em todas as mesas e salas de reunião.</p>
+        </div>
+        <div class="guidelines">
+          <img src="../images/clean-table.svg" alt="Use máscara">
+          <p><strong>Limpeza: </strong>após usar uma mesa de trabalho ou sala de reunião, limpe as superfícies com
+            álcool
+            70.</p>
+        </div>
+        <div class="guidelines">
+          <img src="../images/keep-distance.svg" alt="Use máscara">
+          <p><strong>Distância: </strong>mantenha um distanciamento seguro de pelo menos um metro dos demais
+            colaboradores.</p>
+        </div>
+      </div>
+      <input type="submit" form="form1" class="modal-guidelines-submit" value="Confirmar">
+    </div>
+  </div>
+  </div>
 
   <!-- SCRIPTS -->
   <script src="../js/modal.js"></script>
