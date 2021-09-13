@@ -178,8 +178,6 @@ line-height: 17px;
 
 
 /********** FOOTER **********/
-/**** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) ****/
-/**** BARRA DE NAVEGAÇÃO (NAV BAR) ****/
 footer .nav-bar {
   display: flex;
   align-items: center;
