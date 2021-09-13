@@ -1,5 +1,5 @@
 body {
-    background: #002A33;
+    background: var(--blue-black);
     justify-content: center;
     align-items: center;
 }
@@ -23,24 +23,23 @@ label {
 }
 
 .container_register {
-    width: 360px;
+    width: 380px;
     min-height: 640px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    max-width: 380px;
-    height: 640px;
     padding: 1.2rem;
     background: var(--white);
 }
 
 .container_buttons_input {
-    max-width: 320px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 1rem;
 }
 
 .buttons_login_signup, .buttons_signin_forgotPassword {
@@ -64,7 +63,7 @@ label {
 
 .buttons_login_signup button:hover,
 .buttons_login_signup button:active {
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 0.3rem solid var(--orange);
     color: var(--orange);
 }
 
@@ -75,13 +74,13 @@ label {
 }
 
 .inputs_password {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
-.inputs_password input {
-    width: 150px;
+.input_password, .input_confirmPassword {
+    width: 100%;
 }
 
 .input_nickname, .input_email, .input_password, .input_confirmPassword {
@@ -90,8 +89,8 @@ label {
 }
 
 #button_register {
-    min-width: 160px;
-    height: 44px;
+    width: 15rem;
+    height: 4.4rem;
     align-self: center;
     margin-top: 2rem;
     font-weight: 700;
@@ -99,4 +98,26 @@ label {
     border-radius: 5px;
     background: var(--orange);
     color: var(--white);
+}
+
+@media only screen and (max-width: 900px) {
+    .container_register {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container_buttons_input {
+        width: 100%;
+    }
+} 
+
+@media only screen and (min-width: 360px) and (max-width: 450px) {
+    .container_register {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container_buttons_input {
+        width: 100%;
+    }
 }

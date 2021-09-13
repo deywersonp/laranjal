@@ -1,7 +1,8 @@
 body {
-    background: #002A33;
+    background: var(--blue-black);
     justify-content: center;
     align-items: center;
+
 }
 
 input {
@@ -23,24 +24,23 @@ label {
 }
 
 .container_login {
-    width: 360px;
+    width: 380px;
     min-height: 640px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    max-width: 380px;
-    height: 640px;
     padding: 1.2rem;
     background: var(--white);
 }
 
 .container_buttons_input {
-    max-width: 320px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 1rem;
 }
 
 .container_fcamara {
@@ -51,11 +51,11 @@ label {
 }
 
 .container_fcamara img {
-    width: 100px;
+    width: 10rem;
 }
 
 .container_fcamara p {
-    margin-top: 10px;
+    margin-top: 1rem;
     width: 100%;
     font-size: 1.5rem;
     color: var(--grey);
@@ -97,17 +97,17 @@ label {
 
 .buttons_login_signup button:hover,
 .buttons_login_signup button:active {
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 0.3rem solid var(--orange);
     color: var(--orange);
 }
 
 .buttons_signin_forgotPassword button {
-    width: 150px;
-    height: 44px;
+    width: 15rem;
+    height: 4.4rem;
 }
 
 #button_signin {
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background: var(--orange);
     color: var(--white);
 }
@@ -115,4 +115,27 @@ label {
 #button_forgotPassword {
     font-weight: 500;
     color: var(--orange);
+}
+
+
+@media only screen and (max-width: 900px) {
+    .container_login {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container_buttons_input {
+        width: 100%;
+    }
+} 
+
+@media only screen and (min-width: 360px) and (max-width: 450px) {
+    .container_login {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container_buttons_input {
+        width: 100%;
+    }
 }
