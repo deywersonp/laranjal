@@ -68,8 +68,7 @@ header{
 }
 
 .wrapper{
-
-  align-itens:center;
+  align-items:center;
 }
 
 
@@ -86,21 +85,33 @@ margin-left: 5px;
   
 }
 
-.unidade {
-   
+.unity-container {
   display: flex;
   flex-direction:row ;
   align-items:center;
-  justify-content: space-evenly;
-  margin-bottom: 50px
+  justify-content: space-around;
 
+  width: 96vw;
+  margin-bottom: 10px;
 }
 
-.unidade  img{
+.unity {
   display: flex;
-  width: 9.9rem;
-  padding: 4px;
-  
+  flex-direction: column ;
+}
+
+
+.unity  img,
+.unity  textarea {
+  width: 10rem;
+  padding: .5rem;
+}
+
+.unity textarea{
+  margin:auto;
+  resize: none;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .data{
@@ -110,9 +121,9 @@ color: #002A33;
 font-weight: 600;     
 font-size: 14px;
 line-height: 17px;
-margin-top: 30px;
- margin-bottom: 10px; 
- margin-left: 5px;
+margin-top: 15px;
+margin-bottom: 10px; 
+margin-left: 5px;
   
 }
 
@@ -137,32 +148,23 @@ margin-top: 30px;
 }
 
 .continuar {
-  
   display: flex;
   align-items:center;
   justify-content:center;
   margin-top: 40px;
-  
 }
 
-.continuar button {
-    margin-top: 10px;
-    padding: 5px;
-    height: 4.5rem;
-    width: 18rem;
-    line-height: 1.4rem;
+.continuar a {
+    padding: 1.1rem 2.9rem 1.1rem 2.9rem;
     color: var(--white);
     background-color: var(--orange);
     border: 1px solid var(--orange);
-    margin-right: 1rem;
     font-size: 1.8rem;
     border-radius: .5rem;
 }
 
 
 /********** FOOTER **********/
-/**** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) ****/
-/**** BARRA DE NAVEGAÇÃO (NAV BAR) ****/
 footer .nav-bar {
   display: flex;
   align-items: center;

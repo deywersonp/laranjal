@@ -154,32 +154,23 @@ line-height: 17px;
 
 
 .continuar {
-  
   display: flex;
   align-items:center;
   justify-content:center;
-  margin-top: 20px;
-  
+  margin-top: 40px;
 }
 
-.continuar button {
-    margin-top: 10px;
-    padding: 5px;
-    height: 4.5rem;
-    width: 18rem;
-    line-height: 1.4rem;
+.continuar a {
+    padding: 1.1rem 2.9rem 1.1rem 2.9rem;
     color: var(--white);
     background-color: var(--orange);
     border: 1px solid var(--orange);
-    margin-right: 1rem;
     font-size: 1.8rem;
     border-radius: .5rem;
 }
 
 
 /********** FOOTER **********/
-/**** STATUS DA CAPACIDADE TOTAL (CAPACITY STATUS) ****/
-/**** BARRA DE NAVEGAÇÃO (NAV BAR) ****/
 footer .nav-bar {
   display: flex;
   align-items: center;

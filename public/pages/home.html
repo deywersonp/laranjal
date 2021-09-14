@@ -16,7 +16,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/home.css">
-  <link rel="stylesheet" href="../styles/modal.css">
 
   <title>Sistema de Agendamentos :: Laranjal</title>
 </head>
@@ -24,129 +23,91 @@
 <body>
   <!-- ********** CABEÇALHO ********** -->
 
-     <header>
-      <div class="header">
-        <a href="#">
-          <img src="../images/laranjal-white.svg" alt="Laranjal - Logo">
-        </a>
-        <div class="profile-info">
-          <p>Yasmin Silva</p>
-          <img src="../images/yasmin-photo.svg" alt="">
-        </div>
-      </div>
-    </header>
-
-     <!-- ********** CONTEÚDO PRINCIPAL ********** -->
-    
-    <div class="second-container">
-      
-      <div class="wrapper">
-          
-          <span class = "ocupacao"> Sistema de Agendamento </span>
-          
-          
-          <h1> Selecione a unidade</h1>
-          
-          <div class="unidade">
-            
-          <img src="../images/sp-1.svg" alt="">
-          
-          <img src="../images/sp-2.svg" alt="">
-          
-          <img src="../images/santos.svg" alt="">
-          
-          </div>
-          
-          <span class="data"> Selecione a data</span>
-          
-          <div class="input-selector">
-            
-            <input id="input-data" type="date">
-            
-          </div>
-          
-          <div class="continuar">
-          
-          <button > Continuar</button>
-          
-          </div>     
-      </div>
-      
-   </div>
-
-
-    <!-- ********** RODAPÉ ********** -->
-    <footer class="view">
-      <nav class="nav-bar">
-        <div>
-          <a href="#" class="home">
-            <img src="../images/home.svg" alt="Home">
-            <span>Inicio</span>
-          </a>
-
-          <a href="#" class="my-reservations">
-            <img src="../images/calendar.svg" alt="Calendário">
-            <span>Minhas Reservas</span>
-          </a>
-
-          <a href="#" class="feedback">
-            <img src="../images/chat.svg" alt="Feedback">
-            <span>Feedback</span>
-          </a>
-
-          <a href="#" class="exit">
-            <img src="../images/exit.svg" alt="Sair">
-            <span>Sair</span>
-          </a>
-        </div>
-      </nav>
-    </footer>
-
-  <!------- MODAL ------->
-  <!-- <div class="modal-wrapper">
-    <div class="modal">
-      <div class="modal-header">
-        <button class="back">
-          <img src="../images/back-arrow.svg" alt="Voltar">
-        </button>
-        <span>Selecione a mesa de trabalho</span>
-      </div>
-
-      <div class="separator"></div>
-
-      <div class="main-content">
-        <div class="table-content place01">
-        </div>
-        <script src="../imagesjs/addMesas.js"></script>
-
-        <div class="table-content place02">
-        </div>
-        <script src="../js/addMesas2.js"></script>
-      </div>
-
-      <div class="modal-footer">
-        <div class="table-subtitle">
-          <span>Legenda</span>
-          <div>
-            <img class="orange1" src="./public/images/orange.svg" alt="ocupada">
-            <span class="span1">ocupada</span>
-
-            <img src="./public/images/green-circle.svg" alt="ocupada">
-            <span class="span2">disponível</span>
-
-            <img src="./public/images/cancel.svg" alt="ocupada">
-            <span class="span3">indisponível</span>
-          </div>
-        </div>
+  <header>
+    <div class="header">
+      <a href="#">
+        <img src="../images/laranjal-white.svg" alt="Laranjal - Logo">
+      </a>
+      <div class="profile-info">
+        <p>Yasmin Silva</p>
+        <img src="../images/yasmin-photo.svg" alt="">
       </div>
     </div>
-  </div> -->
+  </header>
 
+  <!-- ********** CONTEÚDO PRINCIPAL ********** -->
+
+  <div class="second-container">
+
+    <div class="wrapper">
+
+      <span class="ocupacao"> Sistema de Agendamento </span>
+
+
+      <h1> Selecione a unidade</h1>
+
+      <div class="unity-container">
+        <div class="unity one">
+          <img src="../images/sp-1.svg" alt="SP-1andar">
+          <textarea id="teste" type="text" readonly>São Paulo 1º andar</textarea>
+        </div>
+
+        <div class="unity two">
+          <img for="teste1" src="../images/sp-2.svg" alt="SP-2andar">
+          <textarea id="teste1" type="text" readonly>São Paulo 2º andar</textarea>
+        </div>
+
+        <div class="unity three">
+          <img src="../images/santos.svg" alt="Santos">
+          <textarea id="teste" type="text" readonly>Santos</textarea>
+        </div>
+
+      </div>
+
+      <span class="data"> Selecione a data</span>
+
+      <div class="input-selector">
+        <input id="input-date" type="date">
+      </div>
+
+      <div class="continuar">
+        <a href="./tipo-agendamento.html"> Continuar</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ********** RODAPÉ ********** -->
+  <footer class="view">
+    <nav class="nav-bar">
+      <div>
+        <a href="./home.html" class="home">
+          <img src="../images/home.svg" alt="Home">
+          <span>Inicio</span>
+        </a>
+
+        <a href="#" class="my-reservations">
+          <img src="../images/calendar.svg" alt="Calendário">
+          <span>Minhas Reservas</span>
+        </a>
+
+        <a href="#" class="feedback">
+          <img src="../images/chat.svg" alt="Feedback">
+          <span>Feedback</span>
+        </a>
+
+        <a href="#" class="exit">
+          <img src="../images/exit.svg" alt="Sair">
+          <span>Sair</span>
+        </a>
+      </div>
+    </nav>
+  </footer>
 
   <!-- SCRIPTS -->
-  <script src="../js/modal.js"></script>
-  <script src="../js/dataController.js"></script>
-  <script src="../js/unidadeController.js"></script>
+  <script src="../js/getUnityController.js"></script>
+  <script src="../js/dateController.js"></script>
 </body>
 
 </html>

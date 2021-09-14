@@ -28,7 +28,7 @@
   <div class="container">
     <header>
       <div class="header">
-        <a href="#">
+        <a href="./home.html">
           <img src="../images/laranjal-white.svg" alt="Laranjal - Logo">
         </a>
         <div class="profile-info">
@@ -49,8 +49,8 @@
       <div class="separator"></div>
 
       <div class="input-info">
-        <input class="input-info1" value="São Paulo 1º andar" type="text" readonly>
-        <input class="input-info2" value="12/09/2021" type="text" readonly>
+        <input class="input-info1" type="text" readonly>
+        <input class="input-info2" type="text" readonly>
       </div>
 
       <div class="main-content">
@@ -63,7 +63,7 @@
     <footer>
       <nav class="nav-bar">
         <div>
-          <a href="#" class="home">
+          <a href="./home.html" class="home">
             <img src="../images/home.svg" alt="Home">
             <span>Inicio</span>
           </a>
@@ -91,13 +91,10 @@
       <div class="modal">
         <button class="modal-close-button">X</button>
         <input id="modal-input-table" type="text" readonly>
-        <div>
-          <input id="modal-input-unity" value="São Paulo 1º andar" type="text" readonly>
-          <span>
-            -
-          </span>
-          <input id="modal-input-date" value="12/09/2021" type="text" readonly>
-        </div>
+
+        <input id="modal-input-unity" value="São Paulo 1º andar" type="text" readonly>
+        <input id="modal-input-date" value="12/09/2021" type="text" readonly>
+
         <button class="modal-continue-button">Continuar</button>
       </div>
     </div>
@@ -115,9 +112,9 @@
       <div class="separator"></div>
 
       <form class="input-info" action="#" id="form1">
-        <input id="modal-guidelines-input-unity" value="São Paulo 1º andar" type="text" readonly>
-        <input id="modal-guidelines-input-date" value="12/09/2021" type="text" readonly>
-        <input id="modal-guidelines-input-table" value="Mesa-238" type="text" readonly>
+        <input id="modal-guidelines-input-unity" type="text" readonly>
+        <input id="modal-guidelines-input-date" type="text" readonly>
+        <input id="modal-guidelines-input-table" type="text" readonly>
       </form>
       <div class=guidelines-container>
         <div class="guidelines">
@@ -146,6 +143,7 @@
   </div>
 
   <!-- SCRIPTS -->
+  <script src="../js/setUnityDateController.js"></script>
   <script src="../js/modal.js"></script>
 </body>
 

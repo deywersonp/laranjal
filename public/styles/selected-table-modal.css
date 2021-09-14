@@ -58,6 +58,7 @@
 
 .modal-wrapper .modal #modal-input-table { 
   width: 10rem;
+  text-align: center;
   
   font-size: 2rem;
   font-weight: 500;
@@ -66,16 +67,17 @@
   padding-top: 2rem;
 }
 
-.modal-wrapper .modal div #modal-input-unity,
-.modal-wrapper .modal div #modal-input-date {
+.modal-wrapper .modal #modal-input-unity,
+.modal-wrapper .modal #modal-input-date {
   font-size: 1.4rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
+  text-align: center;
 }
 
-.modal-wrapper .modal div #modal-input-unity {
+.modal-wrapper .modal #modal-input-unity {
   width: 13rem;
 }
-.modal-wrapper .modal div #modal-input-date {
+.modal-wrapper .modal #modal-input-date {
   width: 10rem;
 }
 
@@ -87,7 +89,7 @@
 
   padding: 1.1rem 1.9rem 1.1rem 1.9rem;
 
-  margin-top: 5rem;
+  margin-top: 3rem;
 
   border-radius: .5rem;
 }
