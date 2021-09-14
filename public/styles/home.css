@@ -16,6 +16,11 @@ header{
   justify-content: space-between;
 }
 
+.menu{
+  
+  display: none;
+}
+
 .header img {
   width: 10rem;
   margin-left: 1rem;
@@ -210,10 +215,11 @@ footer .nav-bar div a img {
 
 /********** BREAKPOINTS **********/
 
-@media (min-width: 800px) {
+@media (min-width: 1023px) {
   .view {
     display: none;   
 }
+
 
 header{
   display: flex;
