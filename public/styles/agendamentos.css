@@ -88,7 +88,7 @@ main .main-header span {
 main .separator{
   width: 96%;
 
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 
   border: .1rem solid var(--grey);
 

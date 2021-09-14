@@ -1,0 +1,96 @@
+.instruct-modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.instruct-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  visibility: hidden;
+  opacity: 0;
+
+  z-index: 1;
+}
+
+.instruct-modal-wrapper .instruct-modal {
+  width: 95%;
+  max-width: 45rem;
+  height: 29.9rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--white);
+
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.instruct-modal-wrapper .instruct-modal div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+
+.instruct-modal-wrapper .instruct-modal div img {
+  width: 3rem;
+}
+
+.instruct-modal-wrapper .instruct-modal div .instruct-orange-img {
+  width: 2.5rem;
+  transform: translate(-8%, -12%);
+  
+}
+
+.instruct-modal-wrapper .instruct-modal div p {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.instruct-modal-wrapper .instruct-modal div .instruct-orange-paragraph {
+  transform: translateX(-3%);
+}
+
+.instruct-modal-wrapper .instruct-modal div p .instruct-green {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.instruct-modal-wrapper .instruct-modal div p .instruct-orange {
+  color: var(--orange);
+  font-weight: 500;
+}
+
+.instruct-modal-wrapper .instruct-modal div p .instruct-grey {
+  color: #242424;
+  font-weight: 500;
+}
+
+
+.instruct-modal-wrapper .instruct-modal  .instruct-modal-continue-button {
+  background-color: var(--orange);
+
+  color: white;
+  font-size: 1.6rem;
+
+  padding: 1.1rem 1.9rem 1.1rem 1.9rem;
+
+  margin-top: 3rem;
+
+  border-radius: .5rem;
+}

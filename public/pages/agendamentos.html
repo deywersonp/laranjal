@@ -16,6 +16,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/agendamentos.css">
+  <link rel="stylesheet" href="../styles/instruct-modal.css">
   <link rel="stylesheet" href="../styles/selected-table-modal.css">
   <link rel="stylesheet" href="../styles/guidelines-modal.css">
 
@@ -87,6 +88,27 @@
     </footer>
 
     <!------- MODAL ------->
+    <div class="instruct-modal-wrapper">
+      <div class="instruct-modal">
+        <div>
+          <img src="../images/green-circle.svg" alt="Green Circle - Disponível">
+          <p>Clique em uma das mesas disponíveis <span class="instruct-green">(ícone verde)</span> para reserva-lá.</p>
+        </div>
+        <div>
+          <img class="instruct-orange-img" src="../images/orange.svg" alt="Orange - Ocupada">
+          <p class="instruct-orange-paragraph">Saiba quem está em uma mesa ocupada <span class="instruct-orange">(ícone
+              laranja)</span> ao
+            clicar nela.</p>
+        </div>
+        <div>
+          <img src="../images/cancel.svg" alt="Bloqueado - Distanciamento COVID-19">
+          <p>Algumas mesas estão indisponíveis <span class="instruct-grey">(ícone cinza)</span> distanciamento social.
+          </p>
+        </div>
+        <button class="instruct-modal-continue-button">Continuar</button>
+      </div>
+    </div>
+
     <div class="modal-wrapper">
       <div class="modal">
         <button class="modal-close-button">X</button>
@@ -140,9 +162,9 @@
       <input type="submit" form="form1" class="modal-guidelines-submit" value="Confirmar">
     </div>
   </div>
-  </div>
 
   <!-- SCRIPTS -->
+  <script src="../js/instructModalController.js"></script>
   <script src="../js/setUnityDateController.js"></script>
   <script src="../js/modal.js"></script>
 </body>

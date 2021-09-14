@@ -32,7 +32,7 @@
   
   flex-direction: column;
 
-  margin-top: .8rem;
+  margin-top: .3rem;
 }
 
 /***** GUIDELINES - HEADER *****/
@@ -43,14 +43,14 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: .8rem;
+  margin-top: .5rem;
 }
 
 .modal-guidelines .modal-guidelines-header button { 
   width: 2.42rem;
   height: 2.42rem;
 
-  margin-left: -9rem;
+  margin-left: -8.6rem;
   background-color: var(--white);
 }
 
