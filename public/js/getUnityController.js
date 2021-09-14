@@ -1,4 +1,5 @@
 let units = document.querySelectorAll("div.unity");
+console.log(units);
 
 document.addEventListener('DOMContentLoaded', () => {
   units.forEach((unity) => {
