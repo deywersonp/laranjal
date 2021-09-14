@@ -16,6 +16,11 @@ header{
   justify-content: space-between;
 }
 
+.menu{
+  
+  display: none;
+}
+
 .header img {
   width: 10rem;
   margin-left: 1rem;
@@ -216,10 +221,11 @@ footer .nav-bar div a img {
 
 /********** BREAKPOINTS **********/
 
-@media (min-width: 800px) {
+@media (min-width: 1023px) {
   .view {
     display: none;   
 }
+
 
 header{
   display: flex;
@@ -239,6 +245,11 @@ header{
 .header img {
   width: 15rem;
 
+}
+
+.mesa span{
+  
+  font-size: 35px;
 }
 
 .header .profile-info p{
@@ -309,7 +320,6 @@ margin-bottom: 10px;
   width: 1200px;
   flex-direction:row ;
   align-items:center;
-  justify-content:space-between;
   margin-bottom: 30px;
 
 }
@@ -337,6 +347,7 @@ margin-bottom: 10px;
     margin-left: 90px;
     display: flex;
     justify-content: end;
+    margin-bottom: 40px;
 }
 
 .input-info input {
@@ -401,6 +412,55 @@ margin-bottom: 10px;
 
   border-radius: .5rem;
   
+}
+
+.menu{
+  display: flex;
+  
+}
+
+.menu .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     position: fixed; 
+     right: 0;
+    margin-top: 39px;
+    margin-right: 360px;
+    width: 5.8vw;
+    height: 35.6rem;
+    background-color: var(--orange);
+    z-index: 2;
+}
+
+.menu .nav-bar div {
+  width: 90vw;
+
+  margin-top: .2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu .nav-bar span{
+  
+  margin-bottom: 30px;
+}
+
+.menu .nav-bar div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+}
+
+.menu .nav-bar div a img {
+  width: 3.8rem;
+  height: 3.7rem;
 }
     
     
