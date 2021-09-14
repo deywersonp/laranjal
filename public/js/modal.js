@@ -1,7 +1,12 @@
+let unityInfo = document.querySelector('input.input-info1');
+let dateInfo = document.querySelector('input.input-info2');
+
 let modal = document.querySelector('div.modal-wrapper');
 let closeButton = document.querySelector('button.modal-close-button');
 let continueButton = document.querySelector('button.modal-continue-button');
 let modalInputTable = document.querySelector('input#modal-input-table');
+let modalInputUnity = document.querySelector('input#modal-input-unity');
+let modalInputDate = document.querySelector('input#modal-input-date');
 
 let guidelineModal = document.querySelector('div.modal-wrapper-guidelines');
 let backButton = document.querySelector('div.modal-guidelines-header .back');
@@ -12,7 +17,7 @@ let tables = document.querySelectorAll('.table-available');
 
 document.addEventListener('DOMContentLoaded', () => {
   tables.forEach((table) => {
-    table.addEventListener('click', getId);
+    table.addEventListener('click', getInformation);
   });
 });
 
@@ -20,10 +25,14 @@ closeButton.addEventListener('click', closeModal);
 continueButton.addEventListener('click', openGuidelineModal);
 backButton.addEventListener('click', closeGuidelineModal);
 
-function getId(event) {
+function getInformation(event) {
   let tableId = event.currentTarget.id
   modalInputTable.value = tableId;
+  modalInputUnity.value = unityInfo.value;
+  modalInputDate.value = dateInfo.value;
   guidelineInputTable.value = tableId;
+
+
   openModal();
 };
 
