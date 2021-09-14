@@ -85,21 +85,33 @@ margin-left: 5px;
   
 }
 
-.unidade {
-   
+.unity-container {
   display: flex;
   flex-direction:row ;
   align-items:center;
-  justify-content: space-evenly;
-  margin-bottom: 50px
+  justify-content: space-around;
 
+  width: 96vw;
+  margin-bottom: 10px;
 }
 
-.unidade  img{
+.unity {
   display: flex;
-  width: 9.9rem;
-  padding: 4px;
-  
+  flex-direction: column ;
+}
+
+
+.unity  img,
+.unity  textarea {
+  width: 10rem;
+  padding: .5rem;
+}
+
+.unity textarea{
+  margin:auto;
+  resize: none;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .data{
@@ -109,9 +121,9 @@ color: #002A33;
 font-weight: 600;     
 font-size: 14px;
 line-height: 17px;
-margin-top: 30px;
- margin-bottom: 10px; 
- margin-left: 5px;
+margin-top: 15px;
+margin-bottom: 10px; 
+margin-left: 5px;
   
 }
 

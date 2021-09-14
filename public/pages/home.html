@@ -16,7 +16,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/home.css">
-  <link rel="stylesheet" href="../styles/modal.css">
 
   <title>Sistema de Agendamentos :: Laranjal</title>
 </head>
@@ -47,13 +46,21 @@
 
       <h1> Selecione a unidade</h1>
 
-      <div class="unidade">
+      <div class="unity-container">
+        <div class="unity one">
+          <img src="../images/sp-1.svg" alt="SP-1andar">
+          <textarea id="teste" type="text" readonly>São Paulo 1º andar</textarea>
+        </div>
 
-        <img src="../images/sp-1.svg" alt="SP-1andar">
+        <div class="unity two">
+          <img for="teste1" src="../images/sp-2.svg" alt="SP-2andar">
+          <textarea id="teste1" type="text" readonly>São Paulo 2º andar</textarea>
+        </div>
 
-        <img src="../images/sp-2.svg" alt="SP-2andar">
-
-        <img src="../images/santos.svg" alt="Santos">
+        <div class="unity three">
+          <img src="../images/santos.svg" alt="Santos">
+          <textarea id="teste" type="text" readonly>Santos</textarea>
+        </div>
 
       </div>
 
@@ -99,9 +106,8 @@
   </footer>
 
   <!-- SCRIPTS -->
-  <script src="../js/modal.js"></script>
+  <script src="../js/getUnity.js"></script>
   <script src="../js/dateController.js"></script>
-  <script src="../js/unidadeController.js"></script>
 </body>
 
 </html>

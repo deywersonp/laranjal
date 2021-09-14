@@ -12,14 +12,20 @@ inputDate.addEventListener('change', function () {
 
   if (dateTyped < new Date(currentDate)) {
     inputDate.value = currentDate;
-
     alert(`Informe uma data a partir do dia de hoje (${currentDate}) !`)
-  };
+    localStorage.setItem('date', currentDate)
+  } else {
+    localStorage.setItem('date', inputDate.value)
+  }
 
   let dateConverted = new Date(dateTyped).getDay()
 
   if (dateConverted == 5 || dateConverted == 6) {
     alert("Escritório disponível apenas de segunda a sexta!")
     inputDate.value = currentDate;
+    localStorage.setItem('date', currentDate)
+  } else {
+    localStorage.setItem('date', inputDate.value)
   }
 });
+
