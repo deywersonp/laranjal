@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="../images/orange.svg">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/perfil.css">
+
+  <title>Sistema de Agendamentos :: Laranjal</title>
+</head>
+
+<body>
+  <!-- ********** CABEÇALHO ********** -->
+
+  <header>
+    <div class="header">
+      <a href="./home.html">
+        <img src="../images/laranjal-white.svg" alt="Laranjal - Logo">
+      </a>
+      <div class="profile-info">
+        <p>Yasmin Silva</p>
+        <img src="../images/yasmin-photo.svg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <!-- ********** CONTEÚDO PRINCIPAL ********** -->
+
+  <div class="second-container">
+
+    <div class="wrapper">
+
+      <div class="ocupacao">
+        <button class="back">
+          <img src="../images/back-arrow.svg" alt="Voltar">
+        </button>
+        <span> Perfil</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="perfil">
+        
+        <img src="../images/yasmin-photo.svg" alt="">
+        
+      </div>
+      
+      <p class="foto">Alterar foto do perfil</p>
+      
+            <div class="menu">
+            
+            <nav class="nav-bar">
+              <div>
+                <a href="#" class="home">
+                  <img src="../images/home.svg" alt="Home">
+                  <span>Inicio</span>
+                </a>
+
+                <a href="#" class="my-reservations">
+                  <img src="../images/calendar.svg" alt="Calendário">
+                  <span>Minhas Reservas</span>
+                </a>
+
+                <a href="#" class="feedback">
+                  <img src="../images/chat.svg" alt="Feedback">
+                  <span>Feedback</span>
+                </a>
+
+                <a href="#" class="exit">
+                  <img src="../images/exit.svg" alt="Sair">
+                  <span>Sair</span>
+                </a>
+              </div>
+            </nav>
+            
+      </div>
+
+      
+        <div class="container_buttons_input">
+
+            <div class="inputs_register">
+                <div class="input_nickname">
+                    <label for="userNickname">
+                        nome social
+                    </label>
+                    <input type="text" name="userNickname" id="userNickname">
+                </div>
+                <div class="input_email">
+                    <label for="userEmail">
+                        e-mail (não é possível alterar)
+                    </label>
+                    <input type="email" name="userEmail" id="userEmail">
+                </div>
+                <div class="inputs_password">
+                    <div class="input_password">
+                        <label for="userPassword">
+                            alterar senha
+                        </label>
+                        <input type="password" name="userPassword" id="userConfirmPassword">
+                    </div>
+                    <div class="input_confirmPassword">
+                        <label for="userConfirmPassword">
+                            confirmar nova senha
+                        </label>
+                        <input type="password" name="userConfirmPassword" id="userConfirmPassword">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="button_register">
+                Cadastrar
+            </button>
+        </div>
+      
+      
+    </div>
+
+  </div>
+
+
+  <!-- ********** RODAPÉ ********** -->
+  <footer class="view">
+    <nav class="nav-bar">
+      <div>
+        <a href="./home.html" class="home">
+          <img src="../images/home.svg" alt="Home">
+          <span>Inicio</span>
+        </a>
+
+        <a href="#" class="my-reservations">
+          <img src="../images/calendar.svg" alt="Calendário">
+          <span>Minhas Reservas</span>
+        </a>
+
+        <a href="#" class="feedback">
+          <img src="../images/chat.svg" alt="Feedback">
+          <span>Feedback</span>
+        </a>
+
+        <a href="#" class="exit">
+          <img src="../images/exit.svg" alt="Sair">
+          <span>Sair</span>
+        </a>
+      </div>
+    </nav>
+  </footer>
+
+
+  <!-- SCRIPTS -->
+  <script src="../js/setUnityDateController.js"></script>
+</body>
+
+</html>
