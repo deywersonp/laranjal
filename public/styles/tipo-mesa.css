@@ -72,7 +72,6 @@ header{
   justify-content: center;
   background-color: var(--white);
   font-weight: 500;
-  height: 400px;
 }
 
 .ocupacao {
@@ -81,8 +80,6 @@ header{
   justify-content:center;
   margin-top: .8rem;
   align-items: center;
-  width: 300px;
-
 }
 
 
@@ -184,13 +181,14 @@ font-size: 12px;
 }
 
 .input-info {
-  margin-left: 90px;
+  display: flex;
+  justify-content: end;
 }
 
 .input-info input {
   width: 10.1rem;
   height: 2.3rem;
-  
+  margin-right: 10px;
   padding: .2rem;
 
   font-size: 1rem;
@@ -272,18 +270,278 @@ footer .nav-bar div a img {
 
 
 /********** BREAKPOINTS **********/
-@media (width: 1024px) {
-  
- header{
-  display: flex; 
-  width: 1100px;
-  justify-content: center;
- }
-  
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 340px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .view {
+    display: none;   
 }
 
 
-@media (min-width: 1025px) {
+.unity-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.wrapper h1 {
+    display: flex;
+    font-style: normal;
+    color: #002A33;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 2px;
+    margin-left: 155px;
+}
+
+.data {
+    font-style: normal;
+    color: #002A33;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 155px;
+}
+
+.input-selector {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-left: 155px;
+}
+
+
+
+.select img {
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    padding: 4px;
+    filter: grayscale(100%);
+    transition: .1s;
+}
+
+.continuar {
+
+    margin-top: 40px;
+}
+
+.menu{
+  display: flex;
+  
+}
+
+.menu .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     position: fixed; 
+     right: 0;
+    margin-top: -60px;
+    margin-right: 5px;
+    width: 12.8vw;
+    height: 35.6rem;
+    background-color: var(--orange);
+    z-index: 2;
+}
+
+.menu .nav-bar div {
+  width: 90vw;
+
+  margin-top: .2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu .nav-bar span{
+  
+  margin-bottom: 30px;
+}
+
+.menu .nav-bar div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+}
+
+.menu .nav-bar div a img {
+  width: 3.8rem;
+  height: 3.7rem;
+}
+
+
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) {
+  
+  .unity img, .unity textarea {
+    width: 22rem;
+    padding: .5rem;
+}
+
+
+.unity textarea {
+    margin: auto;
+    resize: none;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+
+
+.menu .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    margin-top: -60px;
+    margin-right: 5px;
+    width: 9.9vw;
+    height: 35.6rem;
+    background-color: var(--orange);
+    z-index: 2;
+}
+  
+
+} 
+
+
+@media only screen and (min-width: 1200px) {
+  
+  .unity img, .unity textarea {
+    width: 22rem;
+    padding: .5rem;
+}
+
+.wrapper h1 {
+    display: flex;
+    font-style: normal;
+    color: #002A33;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 2px;
+    margin-left: 255px;
+}
+
+
+.data {
+    font-style: normal;
+    color: #002A33;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 255px;
+}
+
+.input-selector {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-left: 255px;
+}
+
+.menu .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    margin-top: -60px;
+    margin-right: 5px;
+    width: 9.9vw;
+    height: 35.6rem;
+    background-color: var(--orange);
+    z-index: 2;
+}
+  
+
+  
+}  
+
+
+
+@media only screen and (min-width: 1800px) {
+  
+  .unity img, .unity textarea {
+    width: 22rem;
+    padding: .5rem;
+}
+
+.wrapper h1 {
+    display: flex;
+    font-style: normal;
+    color: #002A33;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 2px;
+    margin-left: 545px;
+}
+
+.data {
+    font-style: normal;
+    color: #002A33;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 545px;
+}
+
+.input-selector {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-left: 545px;
+}
+
+.menu .nav-bar {
+
+    width: 6.8vw;
+
+}
+  
+  
+  
+}  
+
+
+
+@media (min-width: 1920px) {
   .view {
     display: none;   
 }
@@ -437,11 +695,6 @@ margin-bottom: 10px;
     font-size: 20px;
 }
 
-.continuar {
-  
-  display: none;
-  
-}
 
 .continuar button{
 
@@ -501,6 +754,7 @@ margin-bottom: 10px;
      position: fixed; 
      right: 0;
     margin-right: 360px;
+    margin-top: 5px;
     width: 5.8vw;
     height: 35.6rem;
     background-color: var(--orange);
