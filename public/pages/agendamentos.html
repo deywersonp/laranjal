@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="../styles/instruct-modal.css">
   <link rel="stylesheet" href="../styles/selected-table-modal.css">
   <link rel="stylesheet" href="../styles/guidelines-modal.css">
+  <link rel="stylesheet" href="../styles/form-modal.css">
+  <link rel="stylesheet" href="../styles/feedback-modal.css">
+  <link rel="stylesheet" href="../styles/exit-modal.css">
 
   <title>Sistema de Agendamentos :: Laranjal</title>
 </head>
@@ -133,7 +136,7 @@
 
       <div class="separator"></div>
 
-      <form class="input-info" action="#" id="form1">
+      <form id="form1" class="input-info" action="./home.html" method="GET" frame="./home.html">
         <input id="modal-guidelines-input-unity" type="text" readonly>
         <input id="modal-guidelines-input-date" type="text" readonly>
         <input id="modal-guidelines-input-table" type="text" readonly>
@@ -163,7 +166,36 @@
     </div>
   </div>
 
+  <div class="form-modal-wrapper">
+    <div class="form-modal">
+      <h3>Sucesso</h3>
+      <p>Seu agendamento foi confirmado!</p>
+      <button class="form-close-button">Fechar</button>
+    </div>
+  </div>
+
+  <div class="feedback-modal-wrapper">
+    <div class="feedback-modal">
+      <h3>Feedback</h3>
+      <p>Acesse a pesquisa de feedback para ajudar a FCamara a proporcionar uma melhor experiência para todos os sangues
+        laranja (link externo).</p>
+      <a href="https://www.google.com.br/" class="feedback-access-button">Acessar</a>
+    </div>
+  </div>
+
+  <div class="exit-modal-wrapper">
+    <div class="exit-modal">
+      <h3>Atenção</h3>
+      <p>Deseja mesmo sair do Laranjal?</p>
+      <div>
+        <a class="exit-confirm-button">Sim</a>
+        <a class="exit-close-button">Não</a>
+      </div>
+    </div>
+  </div>
+
   <!-- SCRIPTS -->
+  <script src="../js/form.js"></script>
   <script src="../js/instructModalController.js"></script>
   <script src="../js/setUnityDateController.js"></script>
   <script src="../js/modal.js"></script>
