@@ -2,6 +2,17 @@
   display: block;
 }
 
+
+.unity  img.active {
+  filter: none;
+  border: .2rem solid var(--orange);
+  border-radius: .5rem;
+}
+
+.unity  textarea.active {
+  color: var(--orange);
+  font-weight: 600;
+}
 /********** HEADER **********/
 header{
   width: 100vw;
@@ -107,21 +118,32 @@ margin-left: 5px;
 .unity {
   display: flex;
   flex-direction: column ;
+  margin-right: .5rem;
 }
 
+.unity:hover {
+  color: var(--orange);
+  font-size: 1.1rem ;
+}
+
+.unity  img {
+  filter: grayscale(100%);
+  transition: .2s;
+}
 
 .unity  img,
 .unity  textarea {
-  width: 10rem;
-  padding: .5rem;
+  width: 9rem;
 }
 
 .unity textarea{
   margin:auto;
+  margin-top: .5rem;
   resize: none;
   text-align: center;
   font-size: 1rem;
 }
+
 
 .data{
   
