@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="../images/orange.svg">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/agendamentos.css">
+  <link rel="stylesheet" href="../styles/instruct-modal.css">
+  <link rel="stylesheet" href="../styles/selected-table-modal.css">
+  <link rel="stylesheet" href="../styles/guidelines-modal.css">
+  <link rel="stylesheet" href="../styles/form-modal.css">
+  <link rel="stylesheet" href="../styles/feedback-modal.css">
+  <link rel="stylesheet" href="../styles/exit-modal.css">
+
+  <title>Sistema de Agendamentos :: Laranjal</title>
+</head>
+
+<body>
+  <!-- ********** CABEÇALHO ********** -->
+
+  <div class="container">
+    <header>
+      <div class="header">
+        <a href="./home.html">
+          <img src="../images/laranjal-white.svg" alt="Laranjal - Logo">
+        </a>
+        <div class="profile-info">
+          <p>Yasmin Silva</p>
+          <img src="../images/yasmin-photo.svg" alt="">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-header">
+        <a href="./tipo-mesa.html" class="back">
+          <img src="../images/back-arrow.svg" alt="Voltar">
+        </a>
+        <span>Escolha uma mesa disponível</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="input-info">
+        <input class="input-info1" type="text" readonly>
+        <input class="input-info2" type="text" readonly>
+      </div>
+
+      <div class="main-content">
+        <div class="container-table-place">
+          <script src="../js/addTables.js"></script>
+        </div>
+    </main>
+
+    <!-- ********** RODAPÉ ********** -->
+    <footer>
+      <nav class="nav-bar">
+        <div>
+          <a href="./home.html" class="home">
+            <img src="../images/home.svg" alt="Home">
+            <span>Inicio</span>
+          </a>
+
+          <a href="#" class="my-reservations">
+            <img src="../images/calendar.svg" alt="Calendário">
+            <span>Minhas Reservas</span>
+          </a>
+
+          <a class="feedback button">
+            <img src="../images/chat.svg" alt="Feedback">
+            <span>Feedback</span>
+          </a>
+
+          <a class="exit button">
+            <img src="../images/exit.svg" alt="Sair">
+            <span>Sair</span>
+          </a>
+        </div>
+      </nav>
+    </footer>
+
+    <!------- MODAL ------->
+    <div class="instruct-modal-wrapper">
+      <div class="instruct-modal">
+        <div>
+          <img src="../images/green-circle.svg" alt="Green Circle - Disponível">
+          <p>Clique em uma das mesas disponíveis <span class="instruct-green">(ícone verde)</span> para reserva-lá.</p>
+        </div>
+        <div>
+          <img class="instruct-orange-img" src="../images/orange.svg" alt="Orange - Ocupada">
+          <p class="instruct-orange-paragraph">Saiba quem está em uma mesa ocupada <span class="instruct-orange">(ícone
+              laranja)</span> ao
+            clicar nela.</p>
+        </div>
+        <div>
+          <img src="../images/cancel.svg" alt="Bloqueado - Distanciamento COVID-19">
+          <p>Algumas mesas estão indisponíveis <span class="instruct-grey">(ícone cinza)</span> distanciamento social.
+          </p>
+        </div>
+        <button class="instruct-modal-continue-button">Continuar</button>
+      </div>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal">
+        <button class="modal-close-button">X</button>
+        <input id="modal-input-table" type="text" readonly>
+
+        <input id="modal-input-unity" value="São Paulo 1º andar" type="text" readonly>
+        <input id="modal-input-date" value="12/09/2021" type="text" readonly>
+
+        <button class="modal-continue-button">Continuar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrapper-guidelines">
+    <div class="modal-guidelines">
+      <div class="modal-guidelines-header">
+        <button class="back">
+          <img src="../images/back-arrow.svg" alt="Voltar">
+        </button>
+        <span>Orientações</span>
+      </div>
+
+      <div class="separator"></div>
+
+      <form id="form1" class="input-info" action="./home.html" method="GET" frame="./home.html">
+        <input id="modal-guidelines-input-unity" type="text" readonly>
+        <input id="modal-guidelines-input-date" type="text" readonly>
+        <input id="modal-guidelines-input-table" type="text" readonly>
+      </form>
+      <div class=guidelines-container>
+        <div class="guidelines">
+          <img src="../images/use-mask.svg" alt="Use máscara">
+          <p><strong>Máscara: </strong>uso obrigatório dentro de quaisquer ambientes do escritório.</p>
+        </div>
+        <div class="guidelines">
+          <img src="../images/use-alcohol.svg" alt="Use álcool em gel">
+          <p><strong>Álcool em gel: </strong>está distribuído em todas as mesas e salas de reunião.</p>
+        </div>
+        <div class="guidelines">
+          <img src="../images/clean-table.svg" alt="Limpe a mesa">
+          <p><strong>Limpeza: </strong>após usar uma mesa de trabalho ou sala de reunião, limpe as superfícies com
+            álcool
+            70.</p>
+        </div>
+        <div class="guidelines">
+          <img src="../images/keep-distance.svg" alt="Mantenha distanciamento social">
+          <p><strong>Distância: </strong>mantenha um distanciamento seguro de pelo menos um metro dos demais
+            colaboradores.</p>
+        </div>
+      </div>
+      <input type="submit" form="form1" class="modal-guidelines-submit" value="Confirmar">
+    </div>
+  </div>
+
+  <div class="form-modal-wrapper">
+    <div class="form-modal">
+      <h3>Sucesso</h3>
+      <p>Seu agendamento foi confirmado!</p>
+      <button class="form-close-button">Fechar</button>
+    </div>
+  </div>
+
+  <div class="feedback-modal-wrapper">
+    <div class="feedback-modal">
+      <button class="feedback-close-button">X</button>
+      <h3>Feedback</h3>
+      <p>Acesse a pesquisa de feedback para ajudar a FCamara a proporcionar uma melhor experiência para todos os sangues
+        laranja (link externo).</p>
+      <a href="https://www.google.com.br/" class="feedback-access-button">Acessar</a>
+    </div>
+  </div>
+
+  <div class="exit-modal-wrapper">
+    <div class="exit-modal">
+      <h3>Atenção</h3>
+      <p>Deseja mesmo sair do Laranjal?</p>
+      <div>
+        <a href="./login.html" class="exit-confirm-button">Sim</a>
+        <a class="exit-close-button">Não</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/exitAndFeedbackController.js"></script>
+  <script src="../js/form.js"></script>
+  <script src="../js/instructModalController.js"></script>
+  <script src="../js/setUnityDateController.js"></script>
+  <script src="../js/modal.js"></script>
+</body>
+
+</html>
