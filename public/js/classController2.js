@@ -18,7 +18,7 @@ availableImage.addEventListener('click', () => {
   firstSpan.classList.add('active');
 
   continueButton.classList.add('active');
-  continueButton.href = './tipo-mesa.html';
+  continueButton.href = './agendamentos.html'
 })
 
 unavailableImage.addEventListener('click', () => {

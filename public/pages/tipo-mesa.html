@@ -42,9 +42,9 @@
     <div class="wrapper">
 
       <div class="ocupacao">
-        <button class="back">
+        <a href='./tipo-agendamento.html' class="back">
           <img src="../images/back-arrow.svg" alt="Voltar">
-        </button>
+        </a>
         <span> Selecione a mesa de trabalho</span>
       </div>
 
@@ -87,13 +87,13 @@
 
 
       <div class="mesa">
-        <span> Quero escolher uma <p>das mesas disponíveis</p></span>
+        <span class="first-span"> Quero escolher uma <p>das mesas disponíveis</p></span>
         <span> Não me importo onde <p>vou me sentar</p></span>
       </div>
 
-      <div class="unidade">
-        <img src="../images/especifica.svg" alt="Selecionar uma mesa específica">
-        <img src="../images/aleatoria.svg" alt="Selecionar uma mesa aleatória">
+      <div class="select">
+        <img id="command-on" src="../images/especifica.svg" alt="Selecionar uma mesa específica">
+        <img id="command-off" src="../images/aleatoria.svg" alt="Selecionar uma mesa aleatória">
       </div>
 
       <div class="continuar">
@@ -133,6 +133,7 @@
 
   <!-- SCRIPTS -->
   <script src="../js/setUnityDateController.js"></script>
+  <script src="../js/classController2.js"></script>
 </body>
 
 </html>
