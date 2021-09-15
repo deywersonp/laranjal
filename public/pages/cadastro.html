@@ -21,51 +21,56 @@
 
         <img src="../images/laranjal-orange.svg" id="logo_laranjal" alt="Logo - Laranjal">
 
-        <div class="container_buttons_input">
+        <div class="container_inputs_links">
 
-            <div class="buttons_login_signup">
-                <button type="submit" id="button_login">
-                    Login
-                </button>
-                <button type="submit" id="button_signup">
-                    Cadastro
-                </button>
+            <div class="container-links_login_signup">
+                <a href="login.html" class="links_login_signup">Login</a>
+                <a href="cadastro.html" class="links_login_signup">Cadastro</a>
             </div>
 
             <div class="inputs_register">
-                <div class="input_nickname">
-                    <label for="userNickname">
-                        nome social
-                    </label>
-                    <input type="text" name="userNickname" id="userNickname">
-                </div>
-                <div class="input_email">
-                    <label for="userEmail">
-                        e-mail
-                    </label>
-                    <input type="email" name="userEmail" id="userEmail">
-                </div>
-                <div class="inputs_password">
-                    <div class="input_password">
-                        <label for="userPassword">
-                            senha
+                <form id="form-register" class="inputs_register">
+                    <div class="input_username">
+                        <label for="userName">
+                            nome social
                         </label>
-                        <input type="password" name="userPassword" id="userConfirmPassword">
+                        <input type="text" name="userName" id="userName" data-tipo="username" required>
+                        <span id="span-error--username"></span>
                     </div>
-                    <div class="input_confirmPassword">
-                        <label for="userConfirmPassword">
-                            confirmar senha
+                    <div class="input_email">
+                        <label for="userEmail">
+                            e-mail
                         </label>
-                        <input type="password" name="userConfirmPassword" id="userConfirmPassword">
+                        <input type="email" name="userEmail" id="userEmail" data-tipo="email" required>
+                        <span id="span-error--email"></span>
                     </div>
-                </div>
+                    <div class="inputs_password">
+                        <div class="input_password">
+                            <label for="userPassword">
+                                senha
+                            </label>
+                            <input type="password" name="userPassword" id="userPassword" data-tipo="password" required>
+                            <span id="span-error--password"></span>
+                        </div>
+                        <div class="input_confirmPassword">
+                            <label for="userConfirmPassword">
+                                confirmar senha
+                            </label>
+                            <input type="password" name="userConfirmPassword" id="userConfirmPassword"
+                                data-tipo="confirmPassword" required>
+                            <span id="span-error--confirmPassword"></span>
+                        </div>
+                    </div>
+                    <span id="span-error--others"></span>
+                </form>
             </div>
 
-            <button type="submit" id="button_register">
+            <button type="submit" id="button_register" form="form-register">
                 Cadastrar
             </button>
         </div>
     </div>
+    <script src="../js/register.js"></script>
 </body>
 
 </html>
