@@ -128,7 +128,7 @@ margin-left: 5px;
 
 .unity  img {
   filter: grayscale(100%);
-  transition: .2s;
+  transition: .1s;
 }
 
 .unity  img,
