@@ -1,17 +1,14 @@
 let feedback = document.querySelector('a.feedback.button');
-console.log(feedback)
 
 let feedbackModal = document.querySelector('div.feedback-modal-wrapper');
+let feedbackModalCloseButton = document.querySelector('button.feedback-close-button');
 let feedbackModalButton = document.querySelector('a.feedback-access-button');
 
 let exit = document.querySelector('a.exit.button');
-console.log(exit)
 
 let exitModal = document.querySelector('div.exit-modal-wrapper');
 let exitModalConfirmButton = document.querySelector('div .exit-confirm-button');
 let exitModalCloseButton = document.querySelector('div .exit-close-button');
-console.log(exitModal)
-console.log(exitModalCloseButton)
 
 
 feedback.addEventListener('click', () => {
@@ -19,6 +16,10 @@ feedback.addEventListener('click', () => {
 });
 
 feedbackModalButton.addEventListener('click', () => {
+  feedbackModal.classList.remove('active');
+});
+
+feedbackModalCloseButton.addEventListener('click', () => {
   feedbackModal.classList.remove('active');
 });
 
