@@ -7,6 +7,10 @@ let currentDate = date.toISOString().split('T')[0];
 inputDate.value = currentDate;
 inputDate.min = currentDate;
 
+window.addEventListener('load', () => {
+  localStorage.setItem('date', currentDate);
+});
+
 inputDate.addEventListener('change', function () {
   let dateTyped = new Date(this.value)
 

@@ -36,9 +36,10 @@ form.addEventListener("submit", async (event) => {
         spanErrorNotFound.innerHTML = data;
     }
 
-    const { token } = data;
+    const { token, consultor } = data;
     if (token) {
         window.location.href = "./home.html";
         localStorage.setItem("token", token);
+        localStorage.setItem("consultor_id", JSON.stringify(consultor.id));
     }
 });

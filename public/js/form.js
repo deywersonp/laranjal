@@ -1,20 +1,15 @@
-let form = document.querySelector('#form1');
-let formCloseButton = document.querySelector('button.form-close-button');
-let inputSubmit = document.querySelector('input[type=submit]');
-// console.log(inputSubmit);
+let formModal = document.querySelector('div.form-modal-wrapper');
+let buttonFormModal = document.querySelector('button.form-close-button');
 
+window.addEventListener('load', () => {
+  let scheduleSuccessfully = localStorage.getItem('schedule');
 
-inputSubmit.addEventListener('click', (event) => {
-  event.submit.preventDefault();
-
-  form.classList.add('active');
-
-  finishForm();
+  if (scheduleSuccessfully == 'success') {
+    formModal.classList.add('active');
+  }
 });
 
-function finishForm() {
-  formCloseButton.addEventListener('click', () => {
-    form.classList.remove('active');
-    form.submit();
-  })
-}
+buttonFormModal.addEventListener('click', () => {
+  formModal.classList.remove('active');
+  localStorage.removeItem('schedule');
+});
