@@ -2,7 +2,7 @@ body {
     background: var(--blue-black);
     justify-content: center;
     align-items: center;
-
+    min-height: 100vh;
 }
 
 input {
@@ -25,17 +25,17 @@ label {
 
 .container_login {
     width: 380px;
-    min-height: 640px;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 1.2rem;
     background: var(--white);
+    padding: 1rem;
 }
 
-.container_buttons_input {
+.container_inputs_links {
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ label {
 .container_fcamara p {
     margin-top: 1rem;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--grey);
 }
 
@@ -72,7 +72,7 @@ label {
     flex-direction: column;
 }
 
-.buttons_login_signup {
+.container-links_login_signup {
     margin-bottom: 2rem;
 }
 
@@ -80,13 +80,11 @@ label {
     margin-top: 2rem;
 }
 
-.buttons_login_signup, .buttons_signin_forgotPassword {
+.buttons_signin_forgotPassword {
     display: flex;
-    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.buttons_login_signup button,
 .buttons_signin_forgotPassword button {
     cursor: pointer;
     font-weight: 600;
@@ -95,14 +93,30 @@ label {
     color: var(--grey);
 }
 
-.buttons_login_signup button:hover,
-.buttons_login_signup button:active {
+.container-links_login_signup {
+    display: flex;
+    gap: 2rem;
+}
+
+.container-links_login_signup a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--grey);
+}
+
+.container-links_login_signup a:hover,
+.container-links_login_signup a:active {
     border-bottom: 0.3rem solid var(--orange);
     color: var(--orange);
 }
 
+.buttons_signin_forgotPassword {
+    
+    width: 100%;
+}
+
 .buttons_signin_forgotPassword button {
-    width: 15rem;
+    width: 50%;
     height: 4.4rem;
 }
 
@@ -117,6 +131,27 @@ label {
     color: var(--orange);
 }
 
+.erro {
+    border: 1px solid var(--red);
+}
+
+span {
+    visibility: hidden;
+}
+
+.error-span {
+    visibility: visible;
+    text-align: end;
+    font-size: 1rem;
+    color: var(--red);
+}
+
+.span-error-404 {
+    visibility: visible;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--red);
+}
 
 @media only screen and (max-width: 900px) {
     .container_login {
@@ -129,7 +164,7 @@ label {
     }
 } 
 
-@media only screen and (min-width: 360px) and (max-width: 450px) {
+@media only screen and (min-width: 320px) and (max-width: 450px) {
     .container_login {
         width: 100vw;
         height: 100vh;
@@ -137,5 +172,6 @@ label {
 
     .container_buttons_input {
         width: 100%;
+        height: 100vh;
     }
 }
