@@ -16,6 +16,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/tipo-agendamento.css">
+  <link rel="stylesheet" href="../styles/feedback-modal.css">
+  <link rel="stylesheet" href="../styles/exit-modal.css">
 
   <title>Sistema de Agendamentos :: Laranjal</title>
 </head>
@@ -128,8 +130,29 @@
     </nav>
   </footer>
 
+  <!------- MODAL ------->
+  <div class="feedback-modal-wrapper">
+    <div class="feedback-modal">
+      <h3>Feedback</h3>
+      <p>Acesse a pesquisa de feedback para ajudar a FCamara a proporcionar uma melhor experiência para todos os sangues
+        laranja (link externo).</p>
+      <a href="https://www.google.com.br/" class="feedback-access-button">Acessar</a>
+    </div>
+  </div>
+
+  <div class="exit-modal-wrapper">
+    <div class="exit-modal">
+      <h3>Atenção</h3>
+      <p>Deseja mesmo sair do Laranjal?</p>
+      <div>
+        <a href="./login.html" class="exit-confirm-button">Sim</a>
+        <a class="exit-close-button">Não</a>
+      </div>
+    </div>
+  </div>
 
   <!-- SCRIPTS -->
+  <script src="../js/exitAndFeedbackController.js"></script>
   <script src="../js/setUnityDateController.js"></script>
   <script src="../js/classController.js"></script>
 </body>
