@@ -5,7 +5,9 @@
 
 .select  img.active{
   display: flex;
+  filter: none;
   border: .2rem solid var(--orange);
+  border-radius: .5rem;
 }
 
 .mesa  span.active {
@@ -85,7 +87,7 @@ header{
 }
 
 
-.ocupacao button { 
+.ocupacao a { 
   width: 2.42rem;
   height: 2.42rem;
 
@@ -112,7 +114,6 @@ header{
 }
 
 
-
 .select {
   display: flex;
   flex-direction:row ;
@@ -128,7 +129,7 @@ header{
   width: 14rem;
   padding: 4px;
   filter: grayscale(100%);
-  transition: .2s;
+  transition: .1s;
 }
 
 .mesa{
