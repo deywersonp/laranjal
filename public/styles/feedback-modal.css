@@ -40,6 +40,19 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.feedback-modal-wrapper .feedback-modal button {
+  color: var(--grey);
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  margin-left: 25rem;
+  margin-top: -3rem;
+
+  padding: 1rem;
+
+  background-color: var(--white);
+}
+
 .feedback-modal-wrapper .feedback-modal h3 {
   margin-top: 1rem;
 
