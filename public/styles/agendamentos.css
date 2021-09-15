@@ -148,6 +148,11 @@ main .main-content .table-place img {
   padding: .7rem;
 }
 
+main .main-content .table-place .table-busy { 
+  width: 3rem;
+  transform: translateY(-8%);
+}
+
 main .main-content .container-table-place .table-separator{
   width: 100%;
   height: 2rem;

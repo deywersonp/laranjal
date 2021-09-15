@@ -1,4 +1,4 @@
-containerTablePlace = document.querySelector('.container-table-place');
+let containerTablePlace = document.querySelector('.container-table-place');
 
 function insertTables() {
     let start = 1;
