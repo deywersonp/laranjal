@@ -1,10 +1,10 @@
-let feedback = document.querySelector('a.feedback');
+let feedback = document.querySelector('a.feedback.button');
 console.log(feedback)
 
 let feedbackModal = document.querySelector('div.feedback-modal-wrapper');
 let feedbackModalButton = document.querySelector('a.feedback-access-button');
 
-let exit = document.querySelector('a.exit');
+let exit = document.querySelector('a.exit.button');
 console.log(exit)
 
 let exitModal = document.querySelector('div.exit-modal-wrapper');
