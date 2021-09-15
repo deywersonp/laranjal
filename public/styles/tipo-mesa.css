@@ -106,7 +106,7 @@ header{
   font-weight: 600;     
   font-size: 16px;
   line-height: 17px;
-  padding-top: 70px;
+  padding-top: 3rem;
   
 }
 
@@ -150,6 +150,21 @@ font-size: 12px;
   
 }
 
+.continuar {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: 40px;
+}
+
+.continuar a {
+    padding: 1.1rem 2.9rem 1.1rem 2.9rem;
+    color: var(--white);
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    font-size: 1.8rem;
+    border-radius: .5rem;
+}
 
 .input-info {
   margin-left: 90px;

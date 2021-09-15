@@ -1,3 +1,18 @@
+.continuar a.active{
+  display: block;
+}
+
+
+.select  img.active{
+  display: flex;
+  border: .2rem solid var(--orange);
+}
+
+.mesa  span.active {
+  color: var(--orange);
+  font-weight: 600;
+}
+
 /********** HEADER **********/
 header{
   width: 100vw;
@@ -98,8 +113,7 @@ header{
 
 
 
-.unidade {
-   
+.select {
   display: flex;
   flex-direction:row ;
   align-items:center;
@@ -108,12 +122,13 @@ header{
 
 }
 
-.unidade  img{
+.select  img{
   display: flex;
   flex-direction:row ;
   width: 14rem;
   padding: 4px;
-  
+  filter: grayscale(100%);
+  transition: .2s;
 }
 
 .mesa{
@@ -130,8 +145,7 @@ header{
 .mesa span{
   
 font-style: normal;
-color: var(--orange);
-font-weight: 600;     
+color: var(--grey);
 font-size: 14px;
 line-height: 17px;
   
@@ -166,6 +180,7 @@ line-height: 17px;
 }
 
 .continuar a {
+    display: none;
     padding: 1.1rem 2.9rem 1.1rem 2.9rem;
     color: var(--white);
     background-color: var(--orange);
