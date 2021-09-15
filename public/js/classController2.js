@@ -17,8 +17,17 @@ availableImage.addEventListener('click', () => {
   availableImage.classList.add('active');
   firstSpan.classList.add('active');
 
+  let unitySelected = localStorage.getItem('unity');
+
+  if (unitySelected == 'São Paulo 1º andar') {
+    continueButton.href = './agendamentos-sp1.html'
+  } else if (unitySelected == 'São Paulo 2º andar') {
+    continueButton.href = './agendamentos-sp2.html'
+  } else {
+    continueButton.href = './agendamentos-santos.html'
+  }
+
   continueButton.classList.add('active');
-  continueButton.href = './agendamentos.html'
 })
 
 unavailableImage.addEventListener('click', () => {
