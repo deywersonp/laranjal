@@ -4,6 +4,9 @@ let deleteScheduleModal = document.querySelector('div.delete-schedule-modal-wrap
 let deleteScheduleModalConfirmButton = document.querySelector('div .delete-confirm-button');
 let deleteScheduleModalCloseButton = document.querySelector('div .delete-close-button');
 
+let deleteScheduleSuccessModal = document.querySelector('div.delete-schedule-modal-success-wrapper');
+let deleteScheduleSuccessModalCloseButton = document.querySelector('button.close-delete-schedule-modal');
+
 const url = `http://localhost:8000/agendamentos`;
 
 const token = localStorage.getItem('token');
@@ -118,4 +121,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     closeDeleteModal();
     location.reload();
   }
+
+  if (localStorage.getItem('scheduleSuccess') == 'true') {
+    deleteScheduleSuccessModal.classList.add('active');
+  }
+
+  deleteScheduleSuccessModalCloseButton.addEventListener('click', () => {
+    localStorage.removeItem('scheduleSuccess');
+    deleteScheduleSuccessModal.classList.remove('active');
+  });
 });
