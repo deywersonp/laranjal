@@ -39,6 +39,7 @@ header{
 .header img {
   width: 10rem;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .header .profile-info {
@@ -71,6 +72,7 @@ header{
   justify-content: center;
   background-color: var(--white);
   font-weight: 500;
+  height: 100vh;
 }
 
 .ocupacao {
