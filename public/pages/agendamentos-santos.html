@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="../styles/instruct-modal.css">
   <link rel="stylesheet" href="../styles/selected-table-modal.css">
   <link rel="stylesheet" href="../styles/guidelines-modal.css">
-  <link rel="stylesheet" href="../styles/form-modal.css">
   <link rel="stylesheet" href="../styles/feedback-modal.css">
   <link rel="stylesheet" href="../styles/exit-modal.css">
 
@@ -136,7 +135,7 @@
 
       <div class="separator"></div>
 
-      <form id="form1" class="input-info" action="./home.html" method="GET" frame="./home.html">
+      <form id="form1" class="input-info" method="POST">
         <input id="modal-guidelines-input-unity" type="text" readonly>
         <input id="modal-guidelines-input-date" type="text" readonly>
         <input id="modal-guidelines-input-table" type="text" readonly>
@@ -196,8 +195,8 @@
   </div>
 
   <!-- SCRIPTS -->
+  <script src="../js/createScheduling.js"></script>
   <script src="../js/exitAndFeedbackController.js"></script>
-  <script src="../js/form.js"></script>
   <script src="../js/instructModalController.js"></script>
   <script src="../js/setUnityDateController.js"></script>
   <script src="../js/modal.js"></script>

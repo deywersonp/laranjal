@@ -1,5 +1,4 @@
 //Document Variables
-let tables = document.querySelectorAll('.table-available');
 let unityInfo = document.querySelector('input.input-info1');
 let dateInfo = document.querySelector('input.input-info2');
 
@@ -19,16 +18,21 @@ let guidelineInputUnity = document.querySelector('input#modal-guidelines-input-u
 let guidelineInputDate = document.querySelector('input#modal-guidelines-input-date');
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  tables.forEach((table) => {
-    table.addEventListener('click', getInformation);
-  });
-});
+let profileModal = document.querySelector('div.profile-modal-wrapper');
+let buttonProfileModal = document.querySelector('button.profile-modal-button');
+let profilePhoto = document.querySelector('img.profile-photo');
+let profileNickname = document.querySelector('p.profile-nickname');
+let profileEmail = document.querySelector('p.profile-email');
 
 closeButton.addEventListener('click', closeModal);
 
 continueButton.addEventListener('click', openGuidelineModal);
 backButton.addEventListener('click', closeGuidelineModal);
+
+
+buttonProfileModal.addEventListener('click', () => {
+  profileModal.classList.remove('active');
+})
 
 function getInformation(event) {
   let tableId = event.currentTarget.id
@@ -41,6 +45,14 @@ function getInformation(event) {
   guidelineInputDate.value = dateInfo.value;
 
   openModal();
+};
+
+function getProfileInformation(event) {
+  profileModal.classList.add('active');
+  let profileInfo = event.currentTarget;
+
+  profileNickname.innerHTML = profileInfo.getAttribute('user-nickname');
+  profileEmail.innerHTML = profileInfo.getAttribute('user-email');
 };
 
 function openModal() {
