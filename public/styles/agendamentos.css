@@ -276,7 +276,6 @@ footer .nav-bar div a img {
 
   }
 
-  
   footer .nav-bar div a {
     display: flex;
     flex-direction: column;
@@ -295,6 +294,21 @@ footer .nav-bar div a img {
   footer .nav-bar div a img {
     width: 2rem;
     height: 1.7rem;
+  }
+
+}
+
+@media screen AND (min-width: 1440px) {
+  main .main-content .table-place {
+    width: 30vw;
+  }
+
+  main .main-content .table-place.second{
+    margin-bottom: 6rem;
+  }
+
+  footer .nav-bar {
+    left:106.55rem;  
   }
 
 }
