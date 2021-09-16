@@ -106,9 +106,3 @@
     margin-left: 39rem;
   }
 }
-
-@media screen AND (min-width: 768px) {
-  .modal-wrapper .modal .modal-close-button {
-    margin-left: 39rem;
-  }
-}

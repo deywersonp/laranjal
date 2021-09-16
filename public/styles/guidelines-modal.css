@@ -134,3 +134,44 @@
 
   border-radius: .5rem;
 }
+
+/********** MEDIA QUERIES **********/
+@media screen AND (min-width: 768px) {
+
+  .modal-guidelines .guidelines-container {
+    max-width: 30rem;
+  }
+}
+
+@media screen AND (min-width: 1024px) {
+.modal-guidelines .separator{
+  max-width: 48rem;
+}
+  
+  .modal-wrapper-guidelines{
+    max-width: 87rem;
+    position: fixed;
+    top: 5rem;
+    left: 7.7rem;
+  
+    width: 100vw;
+    height: calc(100% - 4.6rem) ;
+  } 
+
+  .modal-guidelines {
+  max-width: 87rem;
+  }
+
+}
+
+@media screen AND (min-width: 1318px) {
+  .modal-wrapper-guidelines{
+    left: 22.4rem;
+  } 
+}
+
+@media screen AND (min-width: 1440px) {
+  .modal-wrapper-guidelines{
+    left: 28.5rem;
+  } 
+}
