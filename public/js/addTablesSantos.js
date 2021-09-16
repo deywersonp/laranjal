@@ -42,6 +42,7 @@ async function getContent() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     let data = await getContent();
+    let random = localStorage.getItem('random');
 
     let busyTables = [];
     data.forEach((data) => {
@@ -51,6 +52,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     function findByTableId(tableId) {
         const found = data.find(element => element.espaco_agendado == tableId);
         return found;
+    }
+
+    function checkRandom() {
+        if (random) {
+            getAvailableTables();
+        }
+    }
+
+    function getAvailableTables() {
+        let availableTables = document.querySelectorAll('.table-available');
+        let maxValue = availableTables.length;
+        let randomNumber = Math.floor(Math.random() * maxValue);
+        let selectTable = availableTables[randomNumber]
+        chooseTable(selectTable);
     }
 
     function insertTables() {
@@ -79,6 +94,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 createTables(id, start, end);
             }
         }
+
+        checkRandom();
     }
 
     function createTables(id, start, end) {
@@ -119,7 +136,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let img2 = document.createElement('img');
                 img2.id = `Mesa-${id}`
                 if (busyTables.includes(img2.id)) {
-                    let found = findByTableId(img.id)
+                    let found = findByTableId(img2.id)
                     img2.src = '../images/orange.svg';
                     img2.alt = 'Ocupada';
                     img2.classList.add('table-busy');
