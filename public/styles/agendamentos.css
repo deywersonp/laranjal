@@ -228,6 +228,14 @@ footer .nav-bar div a img {
     justify-content: center;
   }
 
+  .header img {
+    margin-left: 3rem;
+  }
+  
+  .header .profile-info {
+    margin-right: 2rem;
+  }
+
   main .input-info {
     margin-right: -27.3rem;
   }
@@ -296,6 +304,20 @@ footer .nav-bar div a img {
     height: 1.7rem;
   }
 
+}
+
+@media screen AND (min-width: 1318px) {
+  main .main-content .table-place {
+    width: 30vw;
+  }
+
+  main .main-content .table-place.second{
+    margin-bottom: 6rem;
+  }
+
+  footer .nav-bar {
+    left:100.4rem;  
+  }
 }
 
 @media screen AND (min-width: 1440px) {
