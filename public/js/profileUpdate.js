@@ -37,10 +37,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     const consultor = await obterDadosConsultor.json();
 
     usernameHeader.innerHTML = consultor.apelido;
-    userImgHeader.setAttribute("src", consultor.imagem);
     username.setAttribute("value", consultor.apelido);
     email.setAttribute("value", consultor.email);
-    userImg.setAttribute("src", consultor.imagem);
+
+    if (!consultor.imagem) {
+        userImg.setAttribute("src", "../images/no-avatar-user.png");
+        userImgHeader.setAttribute("src", "../images/no-avatar-user.png");
+    } else {
+        userImg.setAttribute("src", consultor.imagem);
+        userImgHeader.setAttribute("src", consultor.imagem);
+    }
 
     return consultor;
 });
