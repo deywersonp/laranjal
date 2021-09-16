@@ -47,9 +47,8 @@ header{
 
 main{
   width: 100vw;
-  height: calc(100% - 9.6rem) ;
+  height: calc(100% - 4.6rem) ;
   display: flex;
-
   align-items: center;
 
   flex-direction: column;

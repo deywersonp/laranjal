@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         busyTables.push(data.espaco_agendado);
     })
 
-    console.log(busyTables)
-    if (busyTables.includes('Mesa-5')) {
-        console.log("Achoooou")
+    function findByTableId(tableId) {
+        const found = data.find(element => element.espaco_agendado == tableId);
+        return found;
     }
 
     function insertTables() {
@@ -151,11 +151,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let img2 = document.createElement('img');
                 img2.id = `Mesa-${id}`
                 if (busyTables.includes(img2.id)) {
+                    let found = findByTableId(img.id)
                     img2.src = '../images/orange.svg';
                     img2.alt = 'Ocupada';
                     img2.classList.add('table-busy');
+                    img2.setAttribute('user-nickname', `${found.apelido}`)
+                    img2.setAttribute('user-email', `${found.email}`)
+                    if (found.imagem === null) {
+                        img2.setAttribute('user-photo', 'nulo')
+                    } else {
+                        img2.setAttribute('user-photo', `${found.imagem}`)
+                    }
+                    img2.classList.add('table-busy');
                     img2.addEventListener('click', getProfileInformation)
-                    console.log('Tem mesa ocupada')
                 } else {
                     img2.src = '../images/green-circle.svg';
                     img2.alt = 'Disponível';
@@ -169,9 +177,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let img = document.createElement('img');
                 img.id = `Mesa-${id}`
                 if (busyTables.includes(img.id)) {
+                    let found = findByTableId(img.id)
                     img.src = '../images/orange.svg';
                     img.alt = 'Ocupada';
                     img.classList.add('table-busy');
+                    img.setAttribute('user-nickname', `${found.apelido}`)
+                    img.setAttribute('user-email', `${found.email}`)
+                    if (found.imagem === null) {
+                        img.setAttribute('user-photo', 'nulo')
+                    } else {
+                        img.setAttribute('user-photo', `${found.imagem}`)
+                    }
                     img.addEventListener('click', getProfileInformation)
                     whoReceive.appendChild(img);
                     id++;

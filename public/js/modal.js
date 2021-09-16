@@ -17,10 +17,22 @@ let guidelineInputTable = document.querySelector('input#modal-guidelines-input-t
 let guidelineInputUnity = document.querySelector('input#modal-guidelines-input-unity');
 let guidelineInputDate = document.querySelector('input#modal-guidelines-input-date');
 
+
+let profileModal = document.querySelector('div.profile-modal-wrapper');
+let buttonProfileModal = document.querySelector('button.profile-modal-button');
+let profilePhoto = document.querySelector('img.profile-photo');
+let profileNickname = document.querySelector('p.profile-nickname');
+let profileEmail = document.querySelector('p.profile-email');
+
 closeButton.addEventListener('click', closeModal);
 
 continueButton.addEventListener('click', openGuidelineModal);
 backButton.addEventListener('click', closeGuidelineModal);
+
+
+buttonProfileModal.addEventListener('click', () => {
+  profileModal.classList.remove('active');
+})
 
 function getInformation(event) {
   let tableId = event.currentTarget.id
@@ -36,7 +48,12 @@ function getInformation(event) {
 };
 
 function getProfileInformation(event) {
-  console.log('Agora vai!')
+  profileModal.classList.add('active');
+  let profileInfo = event.currentTarget;
+
+  profileNickname.innerHTML = profileInfo.getAttribute('user-nickname');
+  profileEmail.innerHTML = profileInfo.getAttribute('user-email');
+  console.log("Fogo!")
 };
 
 function openModal() {
