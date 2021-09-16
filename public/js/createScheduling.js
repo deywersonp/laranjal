@@ -7,7 +7,7 @@ form.addEventListener("submit", async (event) => {
   const unity = document.querySelector('#modal-guidelines-input-unity');
   const date = document.querySelector('#modal-guidelines-input-date');
   const table = document.querySelector('#modal-guidelines-input-table');
-  const consultorId = localStorage.getItem('consultor_id');
+  const consultorId = localStorage.getItem('userId');
   const token = localStorage.getItem('token');
 
   const api = await fetch(url, {
