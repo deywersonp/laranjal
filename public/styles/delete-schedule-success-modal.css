@@ -1,0 +1,70 @@
+.delete-schedule-modal-success-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.delete-schedule-modal-success-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  visibility: hidden;
+  opacity: 0;
+
+  z-index: 1;
+}
+
+.delete-schedule-modal-success-wrapper .delete-schedule-modal-success {
+  width: 95%;
+  max-width: 45rem;
+  height: 24.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--white);
+
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.delete-schedule-modal-success-wrapper .delete-schedule-modal-success h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--grey);
+}
+
+.delete-schedule-modal-success-wrapper .delete-schedule-modal-success p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--grey);
+
+  margin-top: 2rem;
+}
+
+.delete-schedule-modal-success-wrapper .delete-schedule-modal-success .close-delete-schedule-modal {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white);
+  
+  width: 16rem;
+
+  margin-top: 3rem;
+  padding: 1.1rem 2.9rem 1.1rem 2.9rem;
+
+  border-radius: .5rem;
+
+  background-color: var(--orange);
+}

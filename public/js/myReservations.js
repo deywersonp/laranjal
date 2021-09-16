@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     localStorage.removeItem('scheduleId');
+    localStorage.setItem('scheduleSuccess', 'true');
     closeDeleteModal();
     location.reload();
   }
