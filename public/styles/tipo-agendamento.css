@@ -73,7 +73,8 @@ header{
   justify-content: center;
   background-color: var(--white);
   font-weight: 500;
-  height: 400px;
+  height: calc(100vh - 9.6rem);
+  
 }
 
 .ocupacao {

@@ -67,7 +67,7 @@ header{
 /********** CONTEÚDO PRINCIPAL **********/
 
 .second-container{
-  
+  height: calc(100vh - 9.6rem);
   display: flex;
   justify-content: center;
   background-color: var(--white);
