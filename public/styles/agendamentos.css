@@ -3,9 +3,16 @@ html {
   overflow: hidden;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+
 header{
   width: 100vw;
-
+  max-width: 87rem;
+  display: flex;
+  align-items: center;
   z-index: 2;
 }
 
@@ -173,14 +180,15 @@ footer .nav-bar {
   justify-content: center;
   
   position: fixed;
-  bottom: 0; 
+  bottom: 0;
+  left: 0; 
 
   width: 100vw;
+  max-width: 87rem;
   height: 4.6rem;
 
   background-color: var(--blue-black);
 
-  z-index: 2;
 }
 
 footer .nav-bar div {
@@ -206,4 +214,87 @@ footer .nav-bar div a {
 footer .nav-bar div a img {
   width: 1.8rem;
   height: 1.7rem;
+}
+
+/********** MEDIA QUERIES **********/
+@media screen AND (min-width: 1024px) {
+  .container{
+    background-color: black;
+  }
+
+  header{
+    max-width: 87rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .input-info {
+    margin-right: -27.3rem;
+  }
+
+  main{
+    max-width: 87rem;
+    height: calc(100vh);
+  }
+
+  main .separator{
+    max-width: 48rem;
+  }
+
+  main .main-content .container-table-place {
+    margin-right: 2rem;
+  }
+
+  main .main-content .table-place {
+    width: 50vw;
+  }
+
+  main .main-content .table-place.second{
+    margin-bottom: 6rem;
+  }
+
+  footer .nav-bar {
+    position: fixed;
+    top: 9.2rem;
+    left:85.7rem;
+    flex-direction: column;
+
+    align-content: space-around;
+
+    width: 9rem;
+    max-width: 87rem;
+    height: 35.2rem;
+  
+    background-color: var(--orange);
+  
+  }
+
+  footer .nav-bar div {
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+
+  }
+
+  
+  footer .nav-bar div a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    color: var(--white);
+
+    margin-bottom: 4rem;
+  }
+  
+  footer .nav-bar div a.exit.button {
+    margin-bottom: 0;
+  }
+
+  footer .nav-bar div a img {
+    width: 2rem;
+    height: 1.7rem;
+  }
+
 }
