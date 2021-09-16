@@ -320,6 +320,12 @@ footer .nav-bar div a img {
   }
 }
 
+@media screen AND (min-width: 1330px) {
+  footer .nav-bar {
+    left:102.4rem;  
+  }
+}
+
 @media screen AND (min-width: 1440px) {
   main .main-content .table-place {
     width: 30vw;

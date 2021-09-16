@@ -164,9 +164,21 @@
 
 }
 
+@media screen AND (min-width: 1054px) {
+  .modal-wrapper-guidelines{
+    left: 9.2rem;
+  } 
+}
+
 @media screen AND (min-width: 1318px) {
   .modal-wrapper-guidelines{
     left: 22.4rem;
+  } 
+}
+
+@media screen AND (min-width: 1330px) {
+  .modal-wrapper-guidelines{
+    left: 24.4rem;
   } 
 }
 
