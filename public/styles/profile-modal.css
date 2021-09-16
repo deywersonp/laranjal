@@ -85,3 +85,20 @@
   font-size: 1.2rem;
   color: var(--grey);
 }
+
+/********** MEDIA QUERIES **********/
+@media screen AND (min-width: 375px) {
+  .profile-modal-wrapper .profile-modal button {
+    margin-left: 30rem;
+  }
+}
+
+@media screen AND (min-width: 768px) {
+  .profile-modal-wrapper .profile-modal button {
+    margin-left: 37rem;
+  }
+
+  .profile-modal-wrapper .profile-modal .nickname-email{
+    margin-left: 4rem;
+  }
+}
