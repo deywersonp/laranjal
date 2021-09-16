@@ -20,7 +20,6 @@ let guidelineInputDate = document.querySelector('input#modal-guidelines-input-da
 
 let profileModal = document.querySelector('div.profile-modal-wrapper');
 let buttonProfileModal = document.querySelector('button.profile-modal-button');
-let profilePhoto = document.querySelector('img.profile-photo');
 let profileNickname = document.querySelector('p.profile-nickname');
 let profileEmail = document.querySelector('p.profile-email');
 
@@ -50,7 +49,7 @@ function getInformation(event) {
 function getProfileInformation(event) {
   profileModal.classList.add('active');
   let profileInfo = event.currentTarget;
-
+  console.log(profileInfo)
   profileNickname.innerHTML = profileInfo.getAttribute('user-nickname');
   profileEmail.innerHTML = profileInfo.getAttribute('user-email');
 };

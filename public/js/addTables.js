@@ -157,11 +157,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     img2.classList.add('table-busy');
                     img2.setAttribute('user-nickname', `${found.apelido}`)
                     img2.setAttribute('user-email', `${found.email}`)
-                    if (found.imagem === null) {
-                        img2.setAttribute('user-photo', 'nulo')
-                    } else {
-                        img2.setAttribute('user-photo', `${found.imagem}`)
-                    }
                     img2.classList.add('table-busy');
                     img2.addEventListener('click', getProfileInformation)
                 } else {
@@ -183,11 +178,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     img.classList.add('table-busy');
                     img.setAttribute('user-nickname', `${found.apelido}`)
                     img.setAttribute('user-email', `${found.email}`)
-                    if (found.imagem === null) {
-                        img.setAttribute('user-photo', 'nulo')
-                    } else {
-                        img.setAttribute('user-photo', `${found.imagem}`)
-                    }
                     img.addEventListener('click', getProfileInformation)
                     whoReceive.appendChild(img);
                     id++;
