@@ -94,3 +94,20 @@
 
   border-radius: .5rem;
 }
+
+/********** MEDIA QUERIES **********/
+@media screen AND (min-width: 768px) {
+  .instruct-modal-wrapper .instruct-modal div {
+    margin-left: 3rem;
+  }
+
+  .instruct-modal-wrapper .instruct-modal div .instruct-orange-img {
+    width: 2.5rem;
+    transform: translate(8%, -12%);
+    
+  }
+  
+  .instruct-modal-wrapper .instruct-modal div .instruct-orange-paragraph {
+    transform: translateX(0);
+  }
+}
