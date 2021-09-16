@@ -95,7 +95,6 @@ inputUserImg.addEventListener("change", (e) => {
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const token = localStorage.getItem("token");
-    const userId = localStorage.getItem("userId");
 
     if (!token) {
         window.location.href = "./login.html";
@@ -125,7 +124,7 @@ form.addEventListener("submit", async (event) => {
     });
 
     if (!atualizarPerfil.ok) {
-        data = await api.json()
+        data = await atualizarPerfil.json()
     }
 
     if (!atualizarPerfil.ok && data.includes('apelido')) {
