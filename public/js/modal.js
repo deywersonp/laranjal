@@ -54,6 +54,20 @@ function getProfileInformation(event) {
   profileEmail.innerHTML = profileInfo.getAttribute('user-email');
 };
 
+function chooseTable(selectedTable) {
+  let tableId = selectedTable.id
+
+  modalInputTable.value = tableId;
+  modalInputUnity.value = unityInfo.value;
+  modalInputDate.value = dateInfo.value;
+
+  guidelineInputTable.value = tableId;
+  guidelineInputUnity.value = unityInfo.value
+  guidelineInputDate.value = dateInfo.value;
+
+  openModal();
+}
+
 function openModal() {
   modal.classList.add('active');
 };

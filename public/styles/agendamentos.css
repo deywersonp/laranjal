@@ -189,6 +189,7 @@ footer .nav-bar {
 
   background-color: var(--blue-black);
 
+  z-index: 2;
 }
 
 footer .nav-bar div {

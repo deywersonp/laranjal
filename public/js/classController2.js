@@ -1,20 +1,30 @@
-let availableImage = document.querySelector('#command-on');
+let specificImage = document.querySelector('#command-on1');
 let firstSpan = document.querySelector('span.first-span');
 
-let unavailableImage = document.querySelector('#command-off');
+let randomImage = document.querySelector('#command-on2');
+let secondSpan = document.querySelector('span.second-span');
 
 let continueButton = document.querySelector("div.continuar a");
 
 window.addEventListener('load', () => {
-  availableImage.classList.remove('active');
+  specificImage.classList.remove('active');
   firstSpan.classList.remove('active');
+
+  randomImage.classList.remove('active');
+  secondSpan.classList.remove('active');
+
+  localStorage.removeItem('random');
 
   continueButton.classList.remove('active');
   continueButton.href = '';
 })
 
-availableImage.addEventListener('click', () => {
-  availableImage.classList.add('active');
+specificImage.addEventListener('click', () => {
+  randomImage.classList.remove('active');
+  secondSpan.classList.remove('active');
+  localStorage.removeItem('random');
+
+  specificImage.classList.add('active');
   firstSpan.classList.add('active');
 
   let unitySelected = localStorage.getItem('unity');
@@ -30,12 +40,23 @@ availableImage.addEventListener('click', () => {
   continueButton.classList.add('active');
 })
 
-unavailableImage.addEventListener('click', () => {
-  availableImage.classList.remove('active');
+randomImage.addEventListener('click', () => {
+  specificImage.classList.remove('active');
   firstSpan.classList.remove('active');
 
-  continueButton.classList.remove('active');
-  continueButton.href = '';
+  randomImage.classList.add('active');
+  secondSpan.classList.add('active');
+  localStorage.setItem('random', true);
 
-  alert("Desculpe-nos :'( \nEssa funcionalidade não está disponível no momento!");
+  let unitySelected = localStorage.getItem('unity');
+
+  if (unitySelected == 'São Paulo 1º andar') {
+    continueButton.href = './agendamentos-sp1.html'
+  } else if (unitySelected == 'São Paulo 2º andar') {
+    continueButton.href = './agendamentos-sp2.html'
+  } else {
+    continueButton.href = './agendamentos-santos.html'
+  }
+
+  continueButton.classList.add('active');
 })
