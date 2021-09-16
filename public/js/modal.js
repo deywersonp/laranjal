@@ -53,7 +53,6 @@ function getProfileInformation(event) {
 
   profileNickname.innerHTML = profileInfo.getAttribute('user-nickname');
   profileEmail.innerHTML = profileInfo.getAttribute('user-email');
-  console.log("Fogo!")
 };
 
 function openModal() {
