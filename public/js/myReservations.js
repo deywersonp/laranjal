@@ -1,3 +1,9 @@
+let main = document.querySelector('main');
+
+let deleteScheduleModal = document.querySelector('div.delete-schedule-modal-wrapper');
+let deleteScheduleModalConfirmButton = document.querySelector('div .delete-confirm-button');
+let deleteScheduleModalCloseButton = document.querySelector('div .delete-close-button');
+
 const url = `http://localhost:8000/agendamentos`;
 
 const token = localStorage.getItem('token');
@@ -24,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let data = await getContent();
   console.log(data)
 
-  if (data.lenght < 1) {
+  if (data.length < 1) {
     let paragraph = document.createElement('p');
     paragraph.innerHTML = 'Ops! Não há agendamentos cadastrados.'
     main.appendChild(paragraph);
@@ -38,14 +44,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       let dateVisit = data.data_visita;
       let tableId = data.espaco_agendado;
       let unity = data.nome_unidade;
-      createContent(dateVisit, tableId, unity);
+      let scheduleId = data.id
+      createContent(dateVisit, tableId, unity, scheduleId);
     });
   }
 
 
-  function createContent(date, tableId, unity) {
-    let main = document.querySelector('main');
-
+  function createContent(date, tableId, unity, scheduleId) {
     let mainContainer = document.createElement('div');
     mainContainer.classList.add('main-container');
     main.appendChild(mainContainer);
@@ -77,11 +82,39 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let cancelButton = document.createElement('button');
     cancelButton.innerHTML = 'Cancelar';
-    cancelButton.addEventListener('click', deleteSchedule)
+    cancelButton.setAttribute('scheduleId', scheduleId)
+    cancelButton.addEventListener('click', openDeleteModal)
     buttonContainer.appendChild(cancelButton);
   }
 
-  function deleteSchedule() {
-    console.log('deleting..')
+
+  function openDeleteModal(event) {
+    deleteScheduleModal.classList.add('active');
+    let schedule = event.currentTarget;
+    let id = schedule.getAttribute('scheduleId');
+    localStorage.setItem('scheduleId', id);
+  }
+
+  function closeDeleteModal() {
+    deleteScheduleModal.classList.remove('active');
+  }
+
+  deleteScheduleModalCloseButton.addEventListener('click', closeDeleteModal);
+  deleteScheduleModalConfirmButton.addEventListener('click', deleteSchedule);
+
+  async function deleteSchedule() {
+    let id = localStorage.getItem('scheduleId');
+    await fetch(url, {
+      method: "DELETE",
+      headers: {
+        "content-type": "application/json",
+        "Authorization": 'Bearer ' + token,
+        "agendamento_id": id
+      }
+    });
+
+    localStorage.removeItem('scheduleId');
+    closeDeleteModal();
+    location.reload();
   }
 });

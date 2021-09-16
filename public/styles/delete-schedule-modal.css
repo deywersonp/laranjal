@@ -1,0 +1,98 @@
+.delete-schedule-modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.delete-schedule-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  visibility: hidden;
+  opacity: 0;
+  
+  z-index: 1;
+}
+
+.delete-schedule-modal-wrapper .delete-schedule-modal {
+  width: 95%;
+  max-width: 45rem;
+  height: 24.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--white);
+
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.delete-schedule-modal-wrapper .delete-schedule-modal h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--grey);
+}
+
+.delete-schedule-modal-wrapper .delete-schedule-modal p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--grey);
+
+  margin-top: 2rem;
+}
+
+.delete-schedule-modal-wrapper .delete-schedule-modal div {
+  width: 100%;
+
+  margin-top: 3.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-schedule-modal-wrapper .delete-schedule-modal div a {
+  width: 13rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  padding: 1.1rem 2.9rem 1.1rem 2.9rem;
+
+  border-radius: .5rem;
+}
+
+.delete-schedule-modal-wrapper .delete-schedule-modal div .delete-confirm-button {
+  color: var(--green);
+
+  margin-right: 2rem;
+
+  border: .2rem solid var(--green);
+
+  background-color: var(--white);
+}
+
+.delete-schedule-modal-wrapper .delete-schedule-modal div .delete-close-button {
+  color: var(--white);
+
+  border: .2rem solid var(--red);
+
+  background-color: var(--red);
+}
