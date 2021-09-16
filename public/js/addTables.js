@@ -116,3 +116,52 @@ function createTables(id, start, end) {
 };
 
 insertTables();
+
+
+
+const url = `http://localhost:8000/agendamentos/todos`;
+
+const token = localStorage.getItem('token');
+const dateVisit = localStorage.getItem('date');
+const unityName = localStorage.getItem('unity');
+
+let data = [];
+
+function getId() {
+    let id = 0;
+    if (unityName == 'São Paulo 1º andar') {
+        id = 1;
+    }
+    if (unityName == 'São Paulo 2º andar') {
+        id = 2;
+    }
+    if (unityName == 'Santos') {
+        id = 3;
+    }
+
+    return id;
+}
+
+
+async function getContent() {
+    let unityId = getId();
+    const response = await fetch(url, {
+        method: "GET",
+        headers: {
+            "content-type": "application/json",
+            "Authorization": 'Bearer ' + token,
+            "data_visita": dateVisit,
+            "unidade_id": unityId
+        }
+    });
+
+    const body = await response.json();
+
+    return body;
+}
+
+
+window.addEventListener("load", async () => {
+    let data = await getContent();
+    console.log(data);
+});
