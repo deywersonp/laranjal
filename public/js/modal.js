@@ -1,5 +1,4 @@
 //Document Variables
-let tables = document.querySelectorAll('.table-available');
 let unityInfo = document.querySelector('input.input-info1');
 let dateInfo = document.querySelector('input.input-info2');
 
@@ -18,13 +17,6 @@ let guidelineInputTable = document.querySelector('input#modal-guidelines-input-t
 let guidelineInputUnity = document.querySelector('input#modal-guidelines-input-unity');
 let guidelineInputDate = document.querySelector('input#modal-guidelines-input-date');
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  tables.forEach((table) => {
-    table.addEventListener('click', getInformation);
-  });
-});
-
 closeButton.addEventListener('click', closeModal);
 
 continueButton.addEventListener('click', openGuidelineModal);
@@ -41,6 +33,10 @@ function getInformation(event) {
   guidelineInputDate.value = dateInfo.value;
 
   openModal();
+};
+
+function getProfileInformation(event) {
+  console.log('Agora vai!')
 };
 
 function openModal() {
