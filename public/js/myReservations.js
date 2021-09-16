@@ -31,7 +31,6 @@ async function getContent() {
 
 document.addEventListener('DOMContentLoaded', async () => {
   let data = await getContent();
-  console.log(data)
 
   if (data.length < 1) {
     let paragraph = document.createElement('p');

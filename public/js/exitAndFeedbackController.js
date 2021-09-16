@@ -35,3 +35,15 @@ exitModalConfirmButton.addEventListener('click', () => {
 exitModalCloseButton.addEventListener('click', () => {
   exitModal.classList.remove('active');
 });
+
+let feedback1 = document.querySelector('a.feedback.button1');
+let exit1 = document.querySelector('a.exit.button1');
+
+if (feedback1 && exit1) {
+  feedback1.addEventListener('click', () => {
+    feedbackModal.classList.add('active');
+  });
+  exit1.addEventListener('click', () => {
+    exitModal.classList.add('active');
+  });
+}
