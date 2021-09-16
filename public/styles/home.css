@@ -31,11 +31,6 @@ header{
   justify-content: space-between;
 }
 
-.menu{
-  
-  display: none;
-}
-
 .header img {
   width: 10rem;
   margin-left: 1rem;
@@ -67,7 +62,6 @@ header{
 /********** CONTEÚDO PRINCIPAL **********/
 
 .second-container{
-  
   display: flex;
   justify-content: center;
   background-color: var(--white);
@@ -75,37 +69,36 @@ header{
   height: 100vh;
 }
 
-.ocupacao {
-  
-  display: flex;
-  justify-content:center;
-  color: #002A33;
-  font-size: 18px;
-  align-items: center;
-  height: 80px;
-  font-style: normal;
-  font-weight: bold;
-  margin-bottom: 10px;
-
-}
-
 .wrapper{
   align-items:center;
 }
 
-
 .wrapper h1 { 
- 
-display: flex;  
-font-style: normal;
-color: #002A33;
-font-weight: 600;     
-font-size: 14px;
-line-height: 17px;
-margin-bottom: 2px;
-margin-left: 5px;
-  
+  display: flex;  
+  font-style: normal;
+  color: var(--blue-black);
+  font-weight: 600;     
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin-bottom: .2rem;
+  margin-left: .5rem;
+    
 }
+
+.occupation {
+  display: flex;
+  justify-content:center;
+  color: var(--blue-black);
+  font-size: 1.8rem;
+  align-items: center;
+  height: 8rem;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+
 
 .unity-container {
   display: flex;
@@ -114,7 +107,7 @@ margin-left: 5px;
   justify-content: space-around;
 
   width: 96vw;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .unity {
@@ -148,46 +141,42 @@ margin-left: 5px;
 
 
 .data{
-  
 font-style: normal;
-color: #002A33;
+color: var(--blue-black);
 font-weight: 600;     
-font-size: 14px;
-line-height: 17px;
-margin-top: 15px;
-margin-bottom: 10px; 
-margin-left: 5px;
-  
+font-size: 1.4rem;
+line-height: 1.7rem;
+margin-top: 1.5rem;
+margin-bottom: 1rem; 
+margin-left: .5rem;
 }
 
 
 .input-selector{
-  
   display: flex;
   align-items:center;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: .5rem;
+  margin-left: .5rem;
 }
 
 .input-selector input {
-  
-    padding: 5px;
+    padding: .5rem;
     line-height: 1.5rem;
     font-weight: 500;
     color: var(--grey);
     background-color: var(--grey-light);
-    border: 1px solid var(--grey);
+    border: .1rem solid var(--grey);
     border-radius: .5rem;
 }
 
-.continuar {
+.continue {
   display: flex;
   align-items:center;
   justify-content:center;
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
-.continuar a {
+.continue a {
     display: none;
     padding: 1.1rem 2.9rem 1.1rem 2.9rem;
     color: var(--white);
