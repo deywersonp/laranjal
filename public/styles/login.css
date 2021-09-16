@@ -1,3 +1,7 @@
+html{
+    overflow: hidden;
+}
+
 body {
     background: var(--blue-black);
     justify-content: center;
