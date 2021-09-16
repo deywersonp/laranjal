@@ -68,7 +68,6 @@ header{
 
 }
 
-
 .ocupacao button { 
   width: 2.42rem;
   height: 2.42rem;
@@ -95,8 +94,6 @@ header{
   background-color: var(--grey);
 }
 
-
-
 .unidade {
    
   display: flex;
@@ -115,27 +112,6 @@ header{
   
 }
 
-.mesa{
-  
-  display: flex;
-  flex-direction:row ;
-  align-items:center;
-  padding: 4px;
-  margin-left: -10px;
-  
-  justify-content: space-evenly;
-}
-
-.mesa span{
-  
-font-style: normal;
-color: var(--orange);
-font-weight: 600;     
-font-size: 14px;
-line-height: 17px;
-  
-}
-
 .input-selector {
     display: flex;
     align-items: center;
@@ -145,7 +121,6 @@ line-height: 17px;
 
 
 .input-selector select {
-  
     width: 13rem;
     height: 3.5rem;
     line-height: 1.5rem;
@@ -158,23 +133,60 @@ line-height: 17px;
     border-radius: .5rem;
 }
 
+.input-selector input-info2 {
+  margin-right: 0;
+}
 
-.continuar {
+main p {
+  margin-top: 4rem;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--grey);
+
+  text-align: center;
+}
+
+main div.main-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+  margin-top: 2rem;
+  margin-left: .4rem;
+}
+
+main div.main-container div.main-input-container {
   display: flex;
-  align-items:center;
-  justify-content:center;
-  margin-top: 40px;
 }
 
-.continuar a {
-    padding: 1.1rem 2.9rem 1.1rem 2.9rem;
-    color: var(--white);
-    background-color: var(--orange);
-    border: 1px solid var(--orange);
-    font-size: 1.8rem;
-    border-radius: .5rem;
+main div.main-container div.main-input-container span {
+  color: var(--grey);
 }
 
+main div.main-container div.main-input-container .main-date-input {
+  font-weight: 600;
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+main div.main-container .main-second-container span {
+  color: var(--grey);
+  font-size: 1.2rem;
+}
+
+main div.main-container button {
+  width: 13rem;
+  height: 3rem;
+
+  transform: translateY(-5%);
+  
+  color: var(--white);
+  font-weight: 600;
+
+  background-color: var(--red);
+
+  border-radius: .5rem;
+}
 
 /********** FOOTER **********/
 footer .nav-bar {
