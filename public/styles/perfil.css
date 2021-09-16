@@ -117,23 +117,27 @@ label {
   display: none;
 }
 
-.perfil{
-  
+.perfil {
   display: flex;
   justify-content: center;
- 
+  
 }
 
-.perfil img{
-    display: flex;
-   align-items: center;
-    justify-content: center;
-   width: 8rem;
-   padding-top: 10px;
-  
+.perfil img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  padding-top: 10px;
+  border-radius: 50%;
+}
+
+input[type="file"] {
+  display: none;
 }
 
 .foto {
+  cursor: pointer;
   display: flex;
   color:var(--orange);
   align-items: center;
@@ -257,6 +261,28 @@ label {
     border: 1px solid var(--orange);
     font-size: 1.8rem;
     border-radius: .5rem;
+}
+
+.erro {
+  border: 1px solid var(--red);
+}
+
+span {
+  visibility: hidden;
+}
+
+.error-span {
+  visibility: visible;
+  text-align: end;
+  font-size: 1rem;
+  color: var(--red);
+}
+
+.span-error-others {
+  visibility: visible;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--red);
 }
 
 
@@ -839,6 +865,4 @@ label {
 }
     
 }
-  
-  
   

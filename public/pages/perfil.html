@@ -31,8 +31,8 @@
         <img src="../images/laranjal-white.svg" alt="Laranjal - Logo">
       </a>
       <div class="profile-info">
-        <p>Yasmin Silva</p>
-        <img src="../images/yasmin-photo.svg" alt="">
+        <p data-tipo="username--header">Yasmin Silva</p>
+        <img src="../images/yasmin-photo.svg" alt="" data-tipo="userImg--header">
       </div>
     </div>
   </header>
@@ -54,11 +54,12 @@
 
       <div class="perfil">
 
-        <img src="../images/yasmin-photo.svg" alt="">
+        <img src="../images/yasmin-photo.svg" alt="" data-tipo="profile-img">
 
       </div>
 
-      <p class="foto">Alterar foto do perfil</p>
+      <label for="userProfileImg" class="foto" data-tipo="label-profile-img">Alterar foto do perfil</label>
+      <input type="file" name="userProfileImg" id="userProfileImg">
 
       <div class="menu">
 
@@ -69,12 +70,12 @@
               <span>Inicio</span>
             </a>
 
-           <a href="./minhas-reservas.html" class="my-reservations">
+            <a href="./minhas-reservas.html" class="my-reservations">
               <img src="../images/calendar.svg" alt="Calendário">
               <span>Minhas Reservas</span>
             </a>
 
-           <a class="feedback button">
+            <a class="feedback button">
               <img src="../images/chat.svg" alt="Feedback">
               <span>Feedback</span>
             </a>
@@ -92,35 +93,42 @@
       <div class="container_buttons_input">
 
         <div class="inputs_register">
-          <div class="input_nickname">
-            <label for="userNickname">
-              nome social
-            </label>
-            <input type="text" name="userNickname" id="userNickname">
-          </div>
-          <div class="input_email">
-            <label for="userEmail">
-              e-mail (não é possível alterar)
-            </label>
-            <input type="email" name="userEmail" id="userEmail">
-          </div>
-          <div class="inputs_password">
-            <div class="input_password">
-              <label for="userPassword">
-                alterar senha
+          <form id="form-update">
+            <div class="input_nickname">
+              <label for="userNickname">
+                nome social
               </label>
-              <input type="password" name="userPassword" id="userConfirmPassword">
+              <input type="text" name="userNickname" id="userNickname" data-tipo="username">
+              <span id="span-error--username"></span>
             </div>
-            <div class="input_confirmPassword">
-              <label for="userConfirmPassword">
-                confirmar nova senha
+            <div class="input_email">
+              <label for="userEmail">
+                e-mail (não é possível alterar)
               </label>
-              <input type="password" name="userConfirmPassword" id="userConfirmPassword">
+              <input type="email" name="userEmail" id="userEmail" data-tipo="email" readonly>
+              <span id="span-error--email"></span>
             </div>
-          </div>
+            <div class="inputs_password">
+              <div class="input_password">
+                <label for="userPassword">
+                  alterar senha
+                </label>
+                <input type="password" name="userPassword" id="userPassword" data-tipo="password">
+                <span id="span-error--password"></span>
+              </div>
+              <div class="input_confirmPassword">
+                <label for="userConfirmPassword">
+                  confirmar nova senha
+                </label>
+                <input type="password" name="userConfirmPassword" id="userConfirmPassword" data-tipo="confirmPassword">
+                <span id="span-error--confirmPassword"></span>
+              </div>
+            </div>
+            <span id="span-error--others"></span>
+          </form>
         </div>
 
-        <button type="submit" id="button_register">
+        <button type="submit" id="button_register" form="form-update">
           Confirmar
         </button>
       </div>
@@ -183,6 +191,7 @@
   <!-- SCRIPTS -->
   <script src="../js/exitAndFeedbackController.js"></script>
   <script src="../js/setUnityDateController.js"></script>
+  <script src="../js/profileUpdate.js"></script>
 </body>
 
 </html>
