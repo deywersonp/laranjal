@@ -86,3 +86,22 @@
 
   background-color: var(--orange);
 } 
+
+/********** MEDIA QUERIES **********/
+@media screen AND (min-width: 375px) {
+  .feedback-modal-wrapper .feedback-modal button {
+    margin-left: 29rem;
+  }
+}
+
+@media screen AND (min-width: 425px) {
+  .feedback-modal-wrapper .feedback-modal button {
+    margin-left: 33rem;
+  }
+}
+
+@media screen AND (min-width: 768px) {
+  .feedback-modal-wrapper .feedback-modal button {
+    margin-left: 37rem;
+  }
+}
