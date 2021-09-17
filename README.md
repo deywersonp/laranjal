@@ -25,7 +25,11 @@
 
 Laranjal é a solução desenvolvida para resolver os problemas da FCâmara! Essa aplicação visa permitir que o usuário faça agendamento de uma mesa de trabalho antes de ir para o escritório.
 
-*A solução completa da aplicação inclui uma API Rest, acesse o repositório da API clicando (aqui)[https://github.com/deywersonp/laranjal-api]*
+Confira como foi o processo de desenvolvimento e muito mais acessando o artigo criado pelo nosso UX no Medium através [deste link](https://medium.com/@lucas.rsjurado/laranjal-sistema-de-agendamento-df12e7a2291) ! 
+
+<br>
+
+*A solução completa da aplicação inclui uma API Rest, acesse o repositório da API clicando [aqui](https://github.com/deywersonp/laranjal-api).*
 
 <br><br>
 
@@ -56,7 +60,7 @@ Se você tem interesse em executar em modo de desenvolvimento, pode começar clo
 - Você encontra esse HTTP ou a chave SSH clicando em `Code` no canto direito superior deste repositório
 
 
-![image](https://user-images.githubusercontent.com/79553681/133712849-0b3145fc-4810-4b64-bce8-0970a98f22fb.png)
+![image](https://user-images.githubusercontent.com/79553681/133716652-f125b5b5-6aa1-44d0-9c32-94ca9d2366f4.png)
 
 
 - Depois de clonar você pode abrir o projeto na sua IDE e visualizar a aplicação em seu navegador.
