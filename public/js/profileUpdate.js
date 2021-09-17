@@ -19,6 +19,7 @@ const spanErrorOthers = document.getElementById("span-error--others");
 document.addEventListener("DOMContentLoaded", async () => {
     const token = localStorage.getItem("token");
     const userId = localStorage.getItem("userId");
+
     if (!token) {
         window.location.href = "./login.html";
     }

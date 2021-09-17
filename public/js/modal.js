@@ -22,6 +22,7 @@ let profileModal = document.querySelector('div.profile-modal-wrapper');
 let buttonProfileModal = document.querySelector('button.profile-modal-button');
 let profileNickname = document.querySelector('p.profile-nickname');
 let profileEmail = document.querySelector('p.profile-email');
+let profileImg = document.querySelector('[data-tipo="userImg--modalTable"]');
 
 closeButton.addEventListener('click', closeModal);
 
@@ -49,9 +50,9 @@ function getInformation(event) {
 function getProfileInformation(event) {
   profileModal.classList.add('active');
   let profileInfo = event.currentTarget;
-  console.log(profileInfo)
   profileNickname.innerHTML = profileInfo.getAttribute('user-nickname');
   profileEmail.innerHTML = profileInfo.getAttribute('user-email');
+  profileImg.setAttribute("src", localStorage.getItem(`user-avatar${profileInfo.id}`));
 };
 
 function chooseTable(selectedTable) {
