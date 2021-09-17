@@ -51,7 +51,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function findByTableId(tableId) {
         const found = data.find(element => element.espaco_agendado == tableId);
+        getImage(found.imagem, found.espaco_agendado);
         return found;
+    }
+
+    function getImage(image, tableId) {
+        localStorage.setItem(`user-avatar${tableId}`, `${image}`);
     }
 
     function checkRandom() {
@@ -167,7 +172,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let img2 = document.createElement('img');
                 img2.id = `Mesa-${id}`
                 if (busyTables.includes(img2.id)) {
-                    let found = findByTableId(img2.id)
+                    let found = findByTableId(img2.id);
                     img2.src = '../images/orange.svg';
                     img2.alt = 'Ocupada';
                     img2.classList.add('table-busy');

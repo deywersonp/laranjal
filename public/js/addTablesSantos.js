@@ -51,7 +51,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function findByTableId(tableId) {
         const found = data.find(element => element.espaco_agendado == tableId);
+        getImage(found.imagem, found.espaco_agendado);
         return found;
+    }
+
+    function getImage(image, tableId) {
+        localStorage.setItem(`user-avatar${tableId}`, `${image}`);
     }
 
     function checkRandom() {
